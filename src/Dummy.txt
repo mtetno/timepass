@@ -1,0 +1,3526 @@
+<td id="rightbar" class="snappy app-footer-none app-subheader-default app-header-default app-sidebar-main app-overlay-none app-rightbar-hours-business"><div><div class="hdrb-container ">
+
+  <div id="hdrb-header"><div><div class="rightbar-simple-header">
+  <div class="rightbar-simple-header-title-row ">
+    <div class="header-text header-2 rightbar-simple-header-title">Normal Business Hours</div>
+    <div class="web-icon-xs web-icon-xs-x rightbar-close"></div>
+  </div>
+
+</div>
+</div></div>
+  <div id="hdrb-content" class="form"><div class="body-copy-2"><div class="bh-container form-block">
+  <div class="header-1" style="margin-top: -10px; margin-bottom: 10px;">
+
+
+        Set your business hours for this office.
+
+
+  </div>
+  <table>
+    <tbody><tr class="body-copy-2">
+      <td class="bh-receive-subtitle">Select when operators receive calls.</td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tbody><tr>
+            <td id="hours-off" class="radio-sec simple-trans hours_on hours-on-option"><div class="radio"><div class="snappy"></div>
+<input id="hours-off-inp" name="hours_on" type="radio" style="display: none;" value="false"></div></td>
+            <td class="bh-first-radio-label radio-label">24/7</td>
+            <td id="hours-on" class="radio-sec simple-trans hours_off hours-on-option"><div class="radio checked"><div class="snappy"></div>
+<input id="hours-on-inp" name="hours_on" type="radio" style="display: none;" value="true"></div></td>
+            <td class="radio-label">Specific hours</td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+    <tr class="body-copy-2">
+      <td class="bh-timezone-subtitle">Time zone</td>
+    </tr>
+    <tr class="bh-timezone" id="business-timezone"><div><div>
+  <div class="mblock">
+    <div class="timezone-menu"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="timezone" name="timezone" type="text" value="(GMT-04:00) US/Eastern" class="snappy sm-input sm-item-value-US/Eastern " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-timezone-Pacific/Midway" data-value="Pacific/Midway">
+
+      <a class="sm-text sm-item-value-Pacific/Midway " href="javascript:void(0)" title="(GMT-11:00) Pacific/Midway">
+
+        (GMT-11:00) Pacific/Midway
+      </a>
+    </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  </div>
+
+    <div class="mblock">
+      <div class="display-all-timezones">
+        <div class="mblock" id="display-all-timezones-checkbox"><div class="radio mblock" style="margin: 0 6px 0;">
+<div class="snappy"></div>
+<input id="input-display-all-timezones-checkbox" name="" type="checkbox" style="display: none;" value="">
+</div></div>
+        <label for="input-display-all-timezones-checkbox" class="radio-label">Display all time zones</label>
+      </div>
+    </div>
+
+
+</div></div></tr>
+  </tbody></table>
+
+  <div id="business-hours">
+    <div class="form-sec-divider "></div>
+    <table class="business-hours ">
+      <tbody><tr>
+        <th class="bh-day"></th>
+        <th><label>Open</label></th>
+        <th class="bh-to"></th>
+        <th><label>Close</label></th>
+      </tr>
+      <tr>
+        <td class="bh-day">Mon</td>
+        <td class="bh-time" id="monday-start"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="monday_start_time" name="monday_start_time" type="text" value="11:00 am" class="snappy sm-input sm-item-value-11:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-monday_start_time-closed" data-value="closed" data-off="true">
+
+      <a class="sm-text sm-item-value-closed " href="javascript:void(0)" title="Closed">
+
+        Closed
+      </a>
+    </li>
+
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-to"><label id="monday-to">to</label></td>
+        <td class="bh-time" id="monday-end"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="monday_end_time" name="monday_end_time" type="text" value="8:00 pm" class="snappy sm-input sm-item-value-20:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-monday_end_time-00:15" data-value="00:15">
+
+      <a class="sm-text sm-item-value-00:15 " href="javascript:void(0)" title="12:15 am">
+
+        12:15 am
+      </a>
+    </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-all-weekdays" id="business-all-weekdays"><div class="radio square mblock" style="margin-right: 0px;">
+<div class="snappy"></div>
+<input id="input-all-weekdays" name="" type="checkbox" style="display: none;" value="">
+</div></td>
+        <td class="bh-checkbox-label">Same for all weekdays</td>
+        <td class="bh-all-days" id="business-all-days"><div class="radio square mblock" style="margin-right: 0px;">
+<div class="snappy"></div>
+<input id="input-all-weekdays" name="" type="checkbox" style="display: none;" value="">
+</div></td>
+        <td class="bh-checkbox-label">Same all week</td>
+      </tr>
+      <tr>
+        <td class="bh-day">Tue</td>
+        <td class="bh-time" id="tuesday-start"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="tuesday_start_time" name="tuesday_start_time" type="text" value="11:00 am" class="snappy sm-input sm-item-value-11:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+            <li class="sm-item" id="sm-item-tuesday_start_time-closed" data-value="closed" data-off="true">
+
+              <a class="sm-text sm-item-value-closed " href="javascript:void(0)" title="Closed">
+
+                Closed
+              </a>
+            </li>
+
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-to"><label id="tuesday-to">to</label></td>
+        <td class="bh-time" id="tuesday-end"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="tuesday_end_time" name="tuesday_end_time" type="text" value="8:00 pm" class="snappy sm-input sm-item-value-20:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+            <li class="sm-item" id="sm-item-tuesday_end_time-00:15" data-value="00:15">
+
+              <a class="sm-text sm-item-value-00:15 " href="javascript:void(0)" title="12:15 am">
+
+                12:15 am
+              </a>
+            </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+      </tr>
+      <tr>
+        <td class="bh-day">Wed</td>
+        <td class="bh-time" id="wednesday-start"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="wednesday_start_time" name="wednesday_start_time" type="text" value="11:00 am" class="snappy sm-input sm-item-value-11:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-wednesday_start_time-closed" data-value="closed" data-off="true">
+
+      <a class="sm-text sm-item-value-closed " href="javascript:void(0)" title="Closed">
+
+        Closed
+      </a>
+    </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-to"><label id="wednesday-to">to</label></td>
+        <td class="bh-time" id="wednesday-end"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="wednesday_end_time" name="wednesday_end_time" type="text" value="8:00 pm" class="snappy sm-input sm-item-value-20:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+            <li class="sm-item" id="sm-item-wednesday_end_time-00:15" data-value="00:15">
+
+              <a class="sm-text sm-item-value-00:15 " href="javascript:void(0)" title="12:15 am">
+
+                12:15 am
+              </a>
+            </li>
+
+
+    </ul>
+  </div>
+</div>
+</div></td>
+      </tr>
+      <tr>
+        <td class="bh-day">Thu</td>
+        <td class="bh-time" id="thursday-start"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="thursday_start_time" name="thursday_start_time" type="text" value="11:00 am" class="snappy sm-input sm-item-value-11:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-thursday_start_time-closed" data-value="closed" data-off="true">
+
+      <a class="sm-text sm-item-value-closed " href="javascript:void(0)" title="Closed">
+
+        Closed
+      </a>
+    </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-to"><label id="thursday-to">to</label></td>
+        <td class="bh-time" id="thursday-end"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="thursday_end_time" name="thursday_end_time" type="text" value="8:00 pm" class="snappy sm-input sm-item-value-20:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+            <li class="sm-item" id="sm-item-thursday_end_time-00:15" data-value="00:15">
+
+              <a class="sm-text sm-item-value-00:15 " href="javascript:void(0)" title="12:15 am">
+
+                12:15 am
+              </a>
+            </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+      </tr>
+      <tr>
+        <td class="bh-day">Fri</td>
+        <td class="bh-time" id="friday-start"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="friday_start_time" name="friday_start_time" type="text" value="11:00 am" class="snappy sm-input sm-item-value-11:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-friday_start_time-closed" data-value="closed" data-off="true">
+
+      <a class="sm-text sm-item-value-closed " href="javascript:void(0)" title="Closed">
+
+        Closed
+      </a>
+    </li>
+
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-to"><label id="friday-to">to</label></td>
+        <td class="bh-time" id="friday-end"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="friday_end_time" name="friday_end_time" type="text" value="8:00 pm" class="snappy sm-input sm-item-value-20:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+            <li class="sm-item" id="sm-item-friday_end_time-00:15" data-value="00:15">
+
+              <a class="sm-text sm-item-value-00:15 " href="javascript:void(0)" title="12:15 am">
+
+                12:15 am
+              </a>
+            </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+      </tr>
+      <tr>
+        <td class="bh-day">Sat</td>
+        <td class="bh-time" id="saturday-start"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="saturday_start_time" name="saturday_start_time" type="text" value="11:00 am" class="snappy sm-input sm-item-value-11:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-saturday_start_time-closed" data-value="closed" data-off="true">
+
+      <a class="sm-text sm-item-value-closed " href="javascript:void(0)" title="Closed">
+
+        Closed
+      </a>
+    </li>
+
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-to"><label id="saturday-to">to</label></td>
+        <td class="bh-time" id="saturday-end"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="saturday_end_time" name="saturday_end_time" type="text" value="8:00 pm" class="snappy sm-input sm-item-value-20:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+            <li class="sm-item" id="sm-item-saturday_end_time-00:15" data-value="00:15">
+
+              <a class="sm-text sm-item-value-00:15 " href="javascript:void(0)" title="12:15 am">
+
+                12:15 am
+              </a>
+            </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+      </tr>
+      <tr>
+        <td class="bh-day">Sun</td>
+        <td class="bh-time" id="sunday-start"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="sunday_start_time" name="sunday_start_time" type="text" value="11:00 am" class="snappy sm-input sm-item-value-11:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-sunday_start_time-closed" data-value="closed" data-off="true">
+
+      <a class="sm-text sm-item-value-closed " href="javascript:void(0)" title="Closed">
+
+        Closed
+      </a>
+    </li>
+
+
+    </ul>
+  </div>
+</div>
+</div></td>
+        <td class="bh-to"><label id="sunday-to">to</label></td>
+        <td class="bh-time" id="sunday-end"><div class="select-menu-view"><div class="select-menu snappy  closed">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="sunday_end_time" name="sunday_end_time" type="text" value="8:00 pm" class="snappy sm-input sm-item-value-20:00 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    <li class="sm-item" id="sm-item-sunday_end_time-00:15" data-value="00:15">
+
+      <a class="sm-text sm-item-value-00:15 " href="javascript:void(0)" title="12:15 am">
+
+        12:15 am
+      </a>
+    </li>
+
+    </ul>
+  </div>
+</div>
+</div></td>
+      </tr>
+    </tbody></table>
+
+    <div id="call-handling-view"><div><div class="form-sec-divider"></div>
+<div class="form-block">
+  <div>
+    <div class="header-4 form-block-desc">
+      Set rules for open and closed hours
+    </div>
+
+    <div class="sec-tabs">
+      <div id="business-hours-tab" class="sec-tab-selected">Open hours routing<div class="iblock" id="tab-business-hours"></div></div>
+      <div id="after-hours-tab" class="">Closed hours routing<div class="iblock" id="tab-after-hours"></div></div>
+    </div>
+
+    <div class="form-block" style="padding: 0;">
+      <div class="ccntr-call-handling-subview-holder">
+        <div class="header-8">
+          Routing Options
+        </div>
+        <div class="body-copy-22 ccntr-handling-subheader">
+          Ensure calls are routed to the right team every time. Select a routing option below to fit your business' needs. Don't forget, you can come back and readjust anytime.
+        </div>
+
+          <div id="routing-options-view-business-hrs" style="margin: 25px 0 40px 0; max-width: 800px;"><div><div class="body-copy-2">Send calls to:</div>
+<div style="padding-bottom: 30px;">
+
+  <div id="first_action-operators" class="simple-trans mblock center first_action call-handled selected">
+    <table><tbody><tr><td>
+      <div><div class="web-icon-xl web-icon-xl-operator"></div></div>
+      <div id="action-operators"><div class="radio checked"><div class="snappy"></div>
+<input id="operators-inp" name="first_action" type="radio" style="display: none;" value="operators" checked="true"></div></div>
+      <div class="center"><label for="operators-inp" class="radio-label selected">Operators</label></div>
+    </td></tr></tbody></table>
+  </div>
+
+  <div id="first_action-menu" class="simple-trans mblock center first_action call-handled">
+    <table><tbody><tr><td>
+      <div><div class="web-icon-xl web-icon-xl-menu"></div></div>
+      <div id="action-menu"><div class="radio"><div class="snappy"></div>
+<input id="menu-inp" name="first_action" type="radio" style="display: none;" value="menu"></div></div>
+      <div class="center"><label for="menu-inp" class="radio-label" style="margin-left: 6px;">
+
+          Other routing options
+
+      </label></div>
+    </td></tr></tbody></table>
+  </div>
+</div>
+
+
+<div id="routing-options-operators">
+  <div class="body-copy-2">
+
+      Choose operator routing type:
+
+  </div>
+
+  <div id="operator_routing-longestidle" class="simple-trans operator_routing selected">
+    <table class="operator-routing">
+      <tbody><tr>
+        <td>
+          <div id="operator_routing-chk-longestidle" class="mblock"><div class="radio checked"><div class="snappy"></div>
+<input id="operator_routing-chk-inp-longestidle" name="operator_routing_type" type="radio" style="display: none;" value="longestidle" checked="true"></div></div>
+        </td>
+        <td>
+          <label for="operator_routing-chk-inp-longestidle" class="radio-label selected">
+            Longest idle
+          </label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        </td>
+        <td>
+          <div id="operator_routing-desc-longestidle" class="operator-routing-desc">
+            <label for="operator_routing-chk-inp-longestidle" class="radio-label selected">
+              Agents are rung individually based on whomever has been idle the longest.
+            </label>
+          </div>
+        </td>
+      </tr>
+
+
+    </tbody></table>
+  </div>
+
+  <div id="operator_routing-fixedorder" class="simple-trans operator_routing">
+    <table class="operator-routing">
+      <tbody><tr>
+        <td>
+          <div id="operator_routing-chk-fixedorder" class="mblock"><div class="radio"><div class="snappy"></div>
+<input id="operator_routing-chk-inp-fixedorder" name="operator_routing_type" type="radio" style="display: none;" value="fixedorder"></div></div>
+        </td>
+        <td>
+          <label for="operator_routing-chk-inp-fixedorder" class="radio-label">
+            Fixed order
+          </label>
+        </td>
+      </tr>
+
+    </tbody></table>
+  </div>
+
+  <div id="operator_routing-roundrobin" class="simple-trans operator_routing">
+    <table class="operator-routing">
+      <tbody><tr>
+        <td>
+          <div id="operator_routing-chk-roundrobin" class="mblock"><div class="radio"><div class="snappy"></div>
+<input id="operator_routing-chk-inp-roundrobin" name="operator_routing_type" type="radio" style="display: none;" value="roundrobin"></div></div>
+        </td>
+        <td>
+          <label for="operator_routing-chk-inp-roundrobin" class="radio-label">
+            Round robin
+          </label>
+        </td>
+      </tr>
+
+    </tbody></table>
+  </div>
+
+  <div id="operator_routing-simultaneous" class="simple-trans operator_routing">
+    <table class="operator-routing">
+      <tbody><tr>
+        <td>
+          <div id="operator_routing-chk-simultaneous" class="mblock"><div class="radio"><div class="snappy"></div>
+<input id="operator_routing-chk-inp-simultaneous" name="operator_routing_type" type="radio" style="display: none;" value="simultaneous"></div></div>
+        </td>
+        <td>
+          <label for="operator_routing-chk-inp-simultaneous" class="radio-label">
+            Simultaneous
+          </label>
+        </td>
+      </tr>
+
+    </tbody></table>
+  </div>
+
+</div></div></div>
+
+      </div>
+      <div class="ccntr-call-handling-subview-holder">
+        <div class="header-8">
+
+            Open Hours Welcome Greeting
+
+        </div>
+        <div class="body-copy-22 ccntr-handling-subheader">
+
+            A welcome greeting is the first greeting that callers hear when they reach the department.
+
+        </div>
+
+          <div id="department-intro-recording-view"><div><audio class="audio-greeting" preload="none" src="https://dialpad.com/blob/ivr/5150181396185088/target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_DEPARTMENTINTRO"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2" style="width: 300px;">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="New Greeting" class="snappy sm-input sm-item-value-5150181396185088 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="No Greeting">
+
+            No Greeting
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-5574095698001920" data-value="5574095698001920">
+
+          <a class="sm-text sm-item-value-5574095698001920 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-4775234509340672" data-value="4775234509340672">
+
+          <a class="sm-text sm-item-value-4775234509340672 " href="javascript:void(0)" title="New Greeting">
+
+            New Greeting
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-5150181396185088" data-value="5150181396185088">
+
+          <a class="sm-text sm-item-value-5150181396185088 " href="javascript:void(0)" title="New Greeting">
+
+            New Greeting
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style="width:300px; height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_buttons">
+
+    <td style="text-align: left; height: 50px;">
+      <div class="record-a-greeting mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-plus mblock"></div>
+
+
+            <div class="wlink iblock">Record a greeting</div>
+
+
+      </div>
+    </td>
+
+    <td style="text-align: right; height: 50px;">
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div class="upload-greeting mblock right icon-text">
+        <div class="web-icon web-icon-xs web-icon-xs-upload mblock"></div>
+        <div class="wlink iblock">Upload (.mp3)</div>
+      </div>
+    </td>
+
+    <td></td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; width: 300px;" colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+
+      </div>
+
+        <div class="ccntr-call-handling-subview-holder">
+          <div class="header-8">
+            Ring Duration
+          </div>
+          <div class="ccntr-common-hrs-warning">
+            Changes made here will be reflected in both Open and Closed Hours
+          </div>
+          <div class="body-copy-22 ccntr-handling-subheader">
+
+            Choose how long department phones and devices will ring before Dialpad assumes operators are not available.
+
+          (default 30s)
+          </div>
+          <div id="ring-duration-slider-view" style="margin: 25px 0 40px 0; max-width: 800px;"><div><div class="range-slider">
+  <div class="rs-current-value" style="left: 443.714px;">30s</div>
+  <div class="rs-bar" style="left: 444.571px;"></div>
+  <input type="range" min="10" max="45" value="30">
+  <div class="rs-min">10s</div>
+  <div class="rs-max">45s</div>
+</div>
+</div></div>
+        </div>
+
+
+
+        <div class="ccntr-call-handling-subview-holder">
+          <div class="header-8">
+            Hold Queue
+
+              <a href="https://help.dialpad.com/hc/en-us/articles/360015149332" target="_blank" class="wlink">
+                <div class="web-icon web-icon-xs web-icon-xs-info mblock" style="margin-bottom: 3px;"></div>
+              </a>
+
+          </div>
+
+          <div class="ccntr-common-hrs-warning">
+            Changes made here will be reflected in both Open and Closed Hours
+          </div>
+          <div class="body-copy-22 ccntr-handling-subheader">
+
+              If all operators are busy on other calls, send callers to a hold queue.
+
+          </div>
+          <div id="hold-queue-settings-view"><div><div id="group-hold-queue-setting" class="mblock"><div class="radio square mblock checked">
+<div class="snappy"></div>
+<input id="group-hold-queue-setting" name="enable_hold_queue" type="checkbox" style="display: none;" value="">
+</div></div>
+<div class="mblock body-copy-32">
+  Enable the hold queue
+</div>
+
+<div style="padding-left: 39px;">
+  <div class="body-copy-32 ivrgrp-hold-queue-section-name">
+    Hold queue size
+  </div>
+  <div class="body-copy-22">
+    Specify your queue size and wait time.
+  </div>
+  <form id="max-hold-form" class="ivrgrp-hold-queue-section-details">
+    <div class="mblock body-copy-2">Maximum queue size</div>
+    <div>
+      <input name="max-hold-count" id="max-hold-count" class="ccntr-input-field" type="number" min="0" value="3">
+      <div class="mblock body-copy-32" style="padding-left:5px">People</div>
+    </div>
+    <div class="mblock body-copy-2">Maximum queue wait time</div>
+    <div class="max-hold-wait-time">
+      <div>
+        <input name="max-hold-minutes" id="max-hold-minutes" class="ccntr-input-field" type="number" min="0" max="300" step="1" value="5">
+        <div class="mblock body-copy-32" style="padding-left:5px">Minutes</div>
+      </div>
+      <div class="max-hold-seconds-wrapper">
+        <div id="max-hold-seconds"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="max-hold-seconds" name="max-hold-seconds" type="text" value="0" class="snappy sm-input sm-item-value-0 ccntr-input-field" tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-max-hold-seconds-0" data-value="0">
+
+          <a class="sm-text sm-item-value-0 " href="javascript:void(0)" title="0">
+
+            0
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-max-hold-seconds-15" data-value="15">
+
+          <a class="sm-text sm-item-value-15 " href="javascript:void(0)" title="15">
+
+            15
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-max-hold-seconds-30" data-value="30">
+
+          <a class="sm-text sm-item-value-30 " href="javascript:void(0)" title="30">
+
+            30
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-max-hold-seconds-45" data-value="45">
+
+          <a class="sm-text sm-item-value-45 " href="javascript:void(0)" title="45">
+
+            45
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+        <div class="mblock body-copy-32" style="padding-left:9px">Seconds</div>
+      </div>
+    </div>
+
+  </form>
+  <div class="body-copy-32 ivrgrp-hold-queue-section-name">
+    Hold greeting
+  </div>
+  <div class="body-copy-22">
+    Select the greeting callers hear when they are placed on hold. This greeting plays once before the hold music begins.
+  </div>
+  <div id="hold-intro-recording-view" class="ivrgrp-hold-queue-section-details"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/default_greeting_main.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2" style="width: 300px;">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default Hold Intro" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default Hold Intro">
+
+            Default Hold Intro
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style="width:300px; height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_buttons">
+
+    <td style="text-align: left; height: 50px;">
+      <div class="record-a-greeting mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-plus mblock"></div>
+
+
+            <div class="wlink iblock">Record a greeting</div>
+
+
+      </div>
+    </td>
+
+    <td style="text-align: right; height: 50px;">
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div class="upload-greeting mblock right icon-text">
+        <div class="web-icon web-icon-xs web-icon-xs-upload mblock"></div>
+        <div class="wlink iblock">Upload (.mp3)</div>
+      </div>
+    </td>
+
+    <td></td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; width: 300px;" colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="body-copy-32 ivrgrp-hold-queue-section-name">
+    Hold music
+  </div>
+  <div class="body-copy-22">
+    Select the music callers hear while on hold.
+  </div>
+  <div id="hold-music-view" class="ivrgrp-hold-queue-section-details"><div><audio class="audio-greeting" preload="none" src="https://dialpad.com/blob/ivr/4587129701531648/target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_HOLDMUSIC"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2" style="width: 300px;">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="ALLISONSMITH_hotel.mp3" class="snappy sm-input sm-item-value-4587129701531648 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Wonderblues">
+
+            Wonderblues
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-lighttouch" data-value="lighttouch">
+
+          <a class="sm-text sm-item-value-lighttouch " href="javascript:void(0)" title="Light Touch">
+
+            Light Touch
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-blue" data-value="blue">
+
+          <a class="sm-text sm-item-value-blue " href="javascript:void(0)" title="Blue">
+
+            Blue
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-sonar" data-value="sonar">
+
+          <a class="sm-text sm-item-value-sonar " href="javascript:void(0)" title="Sonar">
+
+            Sonar
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-alex_hold" data-value="alex_hold">
+
+          <a class="sm-text sm-item-value-alex_hold " href="javascript:void(0)" title="I'm On Hold">
+
+            I'm On Hold
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-4587129701531648" data-value="4587129701531648">
+
+          <a class="sm-text sm-item-value-4587129701531648 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style="width:300px; height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_buttons">
+
+    <td style="text-align: right; height: 50px;">
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div class="upload-greeting mblock right icon-text">
+        <div class="web-icon web-icon-xs web-icon-xs-upload mblock"></div>
+        <div class="wlink iblock">Upload (.mp3)</div>
+      </div>
+    </td>
+
+    <td></td>
+
+    <td></td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; width: 300px;" colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+
+</div></div></div>
+
+        </div>
+
+
+
+        <div class="ccntr-call-handling-subview-holder">
+          <div class="header-8">
+            Fallback Options
+          </div>
+
+          <div class="body-copy-22 ccntr-handling-subheader">
+
+            Choose what happens to the calls when no Operators are available during business hours.
+
+          </div>
+          <div id="fallback-options-view-business-hrs" style="margin: 25px 0 40px 0; max-width: 800px;"><div><div>
+  <div id="hold-agent-desc" class="body-copy-2">
+    Calls will be sent:
+  </div>
+  <div id="no_operators_action-voicemail" class="simple-trans no_operators_action">
+    <table><tbody><tr><td>
+    <div id="no-operator-voicemail" class="mblock"><div class="radio"><div class="snappy"></div>
+<input id="no-op-voicemail-inp" name="no_operators_action" type="radio" style="display: none;" value="voicemail"></div></div>
+      <label for="no-op-voicemail-inp" class="radio-label">
+        Directly to voicemail
+      <span class="body-copy-2 form-block-desc">
+        (
+
+          Operators will receive notifications when voicemails are left
+
+        )
+      </span>
+      </label>
+    </td></tr></tbody></table>
+  </div>
+  <div id="no_operators_action-message" class="simple-trans no_operators_action">
+    <table><tbody><tr><td>
+    <div id="no-operator-message" class="mblock"><div class="radio"><div class="snappy"></div>
+<input id="no-op-message-inp" name="no_operators_action" type="radio" style="display: none;" value="message"></div></div>
+    <label for="no-op-message-inp" class="radio-label">To a message (no voicemail)</label>
+    </td></tr></tbody></table>
+    <div id="settings-message" class="ch-no-operators-action-setting">
+      <div id="message-greetings-view"><div><audio class="audio-greeting" preload="none" src="https://dialpad.com/blob/ivr/4694445656506368/target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_VMUNAVAILABLE"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2" style="width: 300px;">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="ALLISONSMITH_hotel.mp3" class="snappy sm-input sm-item-value-4694445656506368 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-4694445656506368" data-value="4694445656506368">
+
+          <a class="sm-text sm-item-value-4694445656506368 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-5076820957724672" data-value="5076820957724672">
+
+          <a class="sm-text sm-item-value-5076820957724672 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style="width:300px; height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_buttons">
+
+    <td style="text-align: left; height: 50px;">
+      <div class="record-a-greeting mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-plus mblock"></div>
+
+
+            <div class="wlink iblock">Record a greeting</div>
+
+
+      </div>
+    </td>
+
+    <td style="text-align: right; height: 50px;">
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div class="upload-greeting mblock right icon-text">
+        <div class="web-icon web-icon-xs web-icon-xs-upload mblock"></div>
+        <div class="wlink iblock">Upload (.mp3)</div>
+      </div>
+    </td>
+
+    <td></td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; width: 300px;" colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+    </div>
+  </div>
+  <div id="no_operators_action-department" class="simple-trans no_operators_action">
+    <table><tbody><tr><td>
+    <div id="no-operator-department" class="mblock"><div class="radio"><div class="snappy"></div>
+<input id="no-op-department-inp" name="no_operators_action" type="radio" style="display: none;" value="department"></div></div>
+    <label for="no-op-department-inp" class="radio-label">To another department</label>
+    </td></tr></tbody></table>
+    <div id="settings-department" class="ch-no-operators-action-setting">
+      <div id="department-menu" class="ch-no-operators-menu"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0" title="-select-">
+
+
+    <input id="send-to-department" name="send-to-department" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " title="-select-" tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-send-to-department-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA " href="javascript:void(0)" title="L1 Department">
+
+            L1 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-send-to-department-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA " href="javascript:void(0)" title="L2 Department">
+
+            L2 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-send-to-department-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM" data-value="agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM " href="javascript:void(0)" title="Support">
+
+            Support
+          </a>
+        </li>
+
+        <li class="sm-item sm-item-disabled" id="sm-item-send-to-department-add_department" data-value="add_department" data-no-select="true">
+
+          <a class="sm-text sm-item-value-add_department " href="javascript:void(0)" title="+ Create a new department">
+
+            + Create a new department
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </div>
+  </div>
+  <div id="no_operators_action-bridge_target" class="simple-trans no_operators_action">
+      <table><tbody><tr><td>
+      <div id="no-operator-bridge_target" class="mblock"><div class="radio"><div class="snappy"></div>
+<input id="no-op-bridge_target-inp" name="no_operators_action" type="radio" style="display: none;" value="bridge_target"></div></div>
+
+          <label for="no-op-bridge_target-inp" class="radio-label">To a team member / room phone</label>
+
+      </td></tr></tbody></table>
+      <div id="settings-bridge_target" class="ch-no-operators-action-setting">
+        <div id="bridge_target-menu" class="ch-no-operators-menu"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+    </div>
+  </div>
+  <div id="no_operators_action-menu" class="simple-trans no_operators_action selected">
+    <table><tbody><tr><td>
+    <div id="no-operator-menu" class="mblock"><div class="radio checked"><div class="snappy"></div>
+<input id="no-op-menu-inp" name="no_operators_action" type="radio" style="display: none;" value="menu"></div></div>
+    <label for="no-op-menu-inp" class="radio-label selected">To an automated response menu</label>
+    </td></tr></tbody></table>
+    <div id="settings-menu" class="ch-no-operators-action-setting ch-show">
+      <div id="automated-menu"><div><div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-1"></div>
+  <div class="iblock" id="dtmf_select_1"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_1" name="dtmf_1" type="text" value="Recorded message" class="snappy sm-input sm-item-value-message " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_1-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_1-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_1-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_1-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_1-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_1-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target hide" id="dtmf_target_1"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_1" name="dtmf_1" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_1"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target" id="dtmf_message_target_1"><div><audio class="audio-greeting" preload="none" src="https://dialpad.com/blob/ivr/6244894054416384/target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="ALLISONSMITH_hotel.mp3" class="snappy sm-input sm-item-value-6244894054416384 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_1" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_1" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target hide" id="dtmf_group_target_1"><div><a class="wlink" href="/groups/" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-2"></div>
+  <div class="iblock" id="dtmf_select_2"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_2" name="dtmf_2" type="text" value="Forward to a department" class="snappy sm-input sm-item-value-department " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_2-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target" id="dtmf_target_2"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_2" name="dtmf_2" type="text" value="L2 Department" class="snappy sm-input sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_2-agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww" data-value="agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww " href="javascript:void(0)" title="Office Main Line">
+
+            Office Main Line
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA " href="javascript:void(0)" title="L1 Department">
+
+            L1 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA " href="javascript:void(0)" title="L2 Department">
+
+            L2 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM" data-value="agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM " href="javascript:void(0)" title="Support">
+
+            Support
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_2-add_department" data-value="add_department">
+
+          <a class="sm-text sm-item-value-add_department " href="javascript:void(0)" title="+ Create a new department">
+
+            + Create a new department
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_2"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_2"><div><audio class="audio-greeting" preload="none" src="https://dialpad.com/blob/ivr/6244894054416384/target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="ALLISONSMITH_hotel.mp3" class="snappy sm-input sm-item-value-6244894054416384 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_2" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_2" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target" id="dtmf_group_target_2"><div><a class="wlink" href="/groups/agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-3"></div>
+  <div class="iblock" id="dtmf_select_3"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_3" name="dtmf_3" type="text" value="Forward to a department" class="snappy sm-input sm-item-value-department " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_3-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target" id="dtmf_target_3"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_3" name="dtmf_3" type="text" value="L2 Department" class="snappy sm-input sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_3-agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww" data-value="agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww " href="javascript:void(0)" title="Office Main Line">
+
+            Office Main Line
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA " href="javascript:void(0)" title="L1 Department">
+
+            L1 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA " href="javascript:void(0)" title="L2 Department">
+
+            L2 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM" data-value="agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM " href="javascript:void(0)" title="Support">
+
+            Support
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_3-add_department" data-value="add_department">
+
+          <a class="sm-text sm-item-value-add_department " href="javascript:void(0)" title="+ Create a new department">
+
+            + Create a new department
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_3"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_3"><div><audio class="audio-greeting" preload="none" src="https://dialpad.com/blob/ivr/6244894054416384/target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="ALLISONSMITH_hotel.mp3" class="snappy sm-input sm-item-value-6244894054416384 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_3" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_3" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target" id="dtmf_group_target_3"><div><a class="wlink" href="/groups/agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-4"></div>
+  <div class="iblock" id="dtmf_select_4"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_4" name="dtmf_4" type="text" value="Disabled" class="snappy sm-input sm-item-value-disabled off " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_4-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_4-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_4-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_4-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_4-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_4-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target hide" id="dtmf_target_4"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_4" name="dtmf_4" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_4"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_4"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default message" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_4" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_4" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target hide" id="dtmf_group_target_4"><div><a class="wlink" href="/groups/" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-5"></div>
+  <div class="iblock" id="dtmf_select_5"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_5" name="dtmf_5" type="text" value="Disabled" class="snappy sm-input sm-item-value-disabled off " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_5-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_5-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_5-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_5-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_5-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_5-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target hide" id="dtmf_target_5"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_5" name="dtmf_5" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_5"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_5"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default message" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_5" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_5" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target hide" id="dtmf_group_target_5"><div><a class="wlink" href="/groups/" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-6"></div>
+  <div class="iblock" id="dtmf_select_6"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_6" name="dtmf_6" type="text" value="Disabled" class="snappy sm-input sm-item-value-disabled off " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_6-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_6-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_6-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_6-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_6-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_6-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target hide" id="dtmf_target_6"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_6" name="dtmf_6" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_6"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_6"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default message" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_6" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_6" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target hide" id="dtmf_group_target_6"><div><a class="wlink" href="/groups/" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-7"></div>
+  <div class="iblock" id="dtmf_select_7"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_7" name="dtmf_7" type="text" value="Disabled" class="snappy sm-input sm-item-value-disabled off " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_7-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_7-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_7-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_7-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_7-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_7-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target hide" id="dtmf_target_7"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_7" name="dtmf_7" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_7"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_7"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default message" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_7" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_7" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target hide" id="dtmf_group_target_7"><div><a class="wlink" href="/groups/" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-8"></div>
+  <div class="iblock" id="dtmf_select_8"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_8" name="dtmf_8" type="text" value="Disabled" class="snappy sm-input sm-item-value-disabled off " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_8-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_8-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_8-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_8-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_8-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_8-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target hide" id="dtmf_target_8"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_8" name="dtmf_8" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_8"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_8"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default message" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_8" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_8" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target hide" id="dtmf_group_target_8"><div><a class="wlink" href="/groups/" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-9"></div>
+  <div class="iblock" id="dtmf_select_9"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_9" name="dtmf_9" type="text" value="Disabled" class="snappy sm-input sm-item-value-disabled off " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_9-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_9-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_9-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_9-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_9-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_9-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target hide" id="dtmf_target_9"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_9" name="dtmf_9" type="text" value="-select-" class="snappy sm-input sm-item-value- unselected " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_9"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_9"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default message" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_9" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_9" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target hide" id="dtmf_group_target_9"><div><a class="wlink" href="/groups/" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="dtmf-sec">
+  <div class="mblock dtmf web-icon-s web-icon-s-0"></div>
+  <div class="iblock" id="dtmf_select_0"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_0" name="dtmf_0" type="text" value="Forward to a department" class="snappy sm-input sm-item-value-department " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_0-directory" data-value="directory">
+
+          <a class="sm-text sm-item-value-directory " href="javascript:void(0)" title="Dial by name directory">
+
+            Dial by name directory
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-department" data-value="department">
+
+          <a class="sm-text sm-item-value-department " href="javascript:void(0)" title="Forward to a department">
+
+            Forward to a department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-person" data-value="person">
+
+          <a class="sm-text sm-item-value-person " href="javascript:void(0)" title="Forward to a person">
+
+            Forward to a person
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-voicemail" data-value="voicemail">
+
+          <a class="sm-text sm-item-value-voicemail " href="javascript:void(0)" title="Leave a voicemail">
+
+            Leave a voicemail
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-message" data-value="message">
+
+          <a class="sm-text sm-item-value-message " href="javascript:void(0)" title="Recorded message">
+
+            Recorded message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-disabled" data-value="disabled" data-off="true">
+
+          <a class="sm-text sm-item-value-disabled " href="javascript:void(0)" title="Disabled">
+
+            Disabled
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-target" id="dtmf_target_0"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="dtmf_0" name="dtmf_0" type="text" value="L1 Department" class="snappy sm-input sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-dtmf_0-agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww" data-value="agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww " href="javascript:void(0)" title="Office Main Line">
+
+            Office Main Line
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA " href="javascript:void(0)" title="L1 Department">
+
+            L1 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA" data-value="agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPAl6sKDA " href="javascript:void(0)" title="L2 Department">
+
+            L2 Department
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM" data-value="agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM">
+
+          <a class="sm-text sm-item-value-agxzfnViZXItdm9pY2VyFwsSCkNhbGxDZW50ZXIYgIDo85-F0AkM " href="javascript:void(0)" title="Support">
+
+            Support
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-dtmf_0-add_department" data-value="add_department">
+
+          <a class="sm-text sm-item-value-add_department " href="javascript:void(0)" title="+ Create a new department">
+
+            + Create a new department
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+  <div class="iblock dtmf-person-target hide" id="dtmf_person_target_0"><div class="user-suggest"><div class="mblock auto-suggest">
+  <input type="text" placeholder="Find a team member" autocomplete="off" class="user-suggest-input">
+  <div class="spinner hide"></div>
+  <ul class="user-suggest-list hide">
+  <!-- list start --></ul>
+</div>
+</div></div>
+  <div class="iblock dtmf-message-target hide" id="dtmf_message_target_0"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default message" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default message">
+
+            Default message
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6244894054416384" data-value="6244894054416384">
+
+          <a class="sm-text sm-item-value-6244894054416384 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6413661472423936" data-value="6413661472423936">
+
+          <a class="sm-text sm-item-value-6413661472423936 " href="javascript:void(0)" title="ALLISONSMITH_hotel.mp3">
+
+            ALLISONSMITH_hotel.mp3
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+      <div id="compact_record_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_0" class="compact_record record-a-greeting web-icon web-icon-s web-icon-s-plus align-web-icon-s-with-select item" style="position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Record</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div id="compact_upload_target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENUOPTION_0" class="compact upload-greeting web-icon web-icon-xs web-icon-xs-upload align-web-icon-s-with-select item" style="background-position-y: -2px; position: relative;"><div class="tooltip simple-trans fade-out tooltip-button"><div class="tooltip-container hide"><div class="tooltip-content">Upload (.mp3)</div><div class="tooltip-callout tooltip-callout-center"></div></div></div></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style=" height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; " colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+  <div class="iblock dtmf-group-target" id="dtmf_group_target_0"><div><a class="wlink" href="/groups/agxzfnViZXItdm9pY2VyGAsSC09mZmljZUdyb3VwGICAmMPP-vYLDA" target="_blank">View department</a>
+</div></div>
+</div>
+<div class="form-sec-divider"></div>
+
+<div class="body-copy-2 form-block-desc">
+  Callers will hear the following greeting when they reach the automated response menu:
+</div>
+<div id="greeting-view"><div><audio class="audio-greeting" preload="none" src="https://dialpad.com/blob/ivr/6647086741585920/target_agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww_MENU"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2" style="width: 300px;">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="New Greeting" class="snappy sm-input sm-item-value-6647086741585920 " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default System Greeting">
+
+            Default System Greeting
+          </a>
+        </li>
+
+        <li class="sm-item" id="sm-item-customivr-6647086741585920" data-value="6647086741585920">
+
+          <a class="sm-text sm-item-value-6647086741585920 " href="javascript:void(0)" title="New Greeting">
+
+            New Greeting
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class=" web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style="width:300px; height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_buttons">
+
+    <td style="text-align: left; height: 50px;">
+      <div class="record-a-greeting mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-plus mblock"></div>
+
+
+            <div class="wlink iblock">Record a greeting</div>
+
+
+      </div>
+    </td>
+
+    <td style="text-align: right; height: 50px;">
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div class="upload-greeting mblock right icon-text">
+        <div class="web-icon web-icon-xs web-icon-xs-upload mblock"></div>
+        <div class="wlink iblock">Upload (.mp3)</div>
+      </div>
+    </td>
+
+    <td></td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; width: 300px;" colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div></div></div>
+    </div>
+  </div>
+</div></div></div>
+
+        </div>
+
+      <div class="ccntr-call-handling-subview-holder">
+        <div class="header-8">
+          Voicemail Greeting
+        </div>
+        <div class="body-copy-22 ccntr-handling-subheader">
+          When a caller is redirected to voicemail, they will hear a voicemail greeting before they leave their voicemail.
+        </div>
+
+          <div id="hold-agent-desc" class="body-copy-2">
+            Open Hours voicemail greeting:
+          </div>
+          <div id="voicemail-greeting-view-business-hrs" class="ch-voicemail-view"><div><audio class="audio-greeting" preload="none" src="https://uber-cdn.appspot.com/static/ivr/ubervoice/no_one_is_available_greeting.mp3"></audio>
+<table class="form" style="width: auto;">
+  <tbody><tr>
+    <td colspan="2" style="width: 300px;">
+      <div class="greetings-select"><div class="select-menu-view"><div class="select-menu snappy  closed ">
+  <div class="sm-input-shim" tabindex="0">
+
+
+    <input id="customivr" name="customivr" type="text" value="Default Greeting" class="snappy sm-input sm-item-value-default " tabindex="-1">
+  </div>
+  <div class="sm-menu"><div></div>
+    <ul class="sm-list">
+
+        <li class="sm-item" id="sm-item-customivr-default" data-value="default">
+
+          <a class="sm-text sm-item-value-default " href="javascript:void(0)" title="Default Greeting">
+
+            Default Greeting
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+</div></div>
+    </td>
+    <td class="greetings-icons" style="padding-top: 7px;">
+      <div class=" web-icon-s greeting-play-stop web-icon-s-play align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-edit web-icon-s-pencil align-web-icon-s-with-select item"></div>
+      <div class="hide web-icon-s greeting-delete web-icon-s-x align-web-icon-s-with-select item"></div>
+
+    </td>
+  </tr>
+
+  <tr class="upload_error hide">
+    <td style="width:300px; height: 25px; padding-top: 13px;" colspan="2">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Sorry, uploads must be in .mp3 format.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="delete_error hide">
+    <td style="height: 25px; padding-top: 13px;" colspan="3">
+      <div class="mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-exclamation mblock"></div>
+        <div class="mblock error-msg">Delete failed, this recording is used elsewhere.</div>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+
+  <tr class="upload_buttons">
+
+    <td style="text-align: left; height: 50px;">
+      <div class="record-a-greeting mblock icon-text">
+        <div class="web-icon web-icon-s web-icon-s-plus mblock"></div>
+
+
+            <div class="wlink iblock">Record a greeting</div>
+
+
+      </div>
+    </td>
+
+    <td style="text-align: right; height: 50px;">
+      <div class="hide"><input type="file" class="upload-greeting-input" accept="audio/mpeg"></div>
+      <div class="upload-greeting mblock right icon-text">
+        <div class="web-icon web-icon-xs web-icon-xs-upload mblock"></div>
+        <div class="wlink iblock">Upload (.mp3)</div>
+      </div>
+    </td>
+
+    <td></td>
+  </tr>
+
+  <tr class="upload_status hide">
+    <td style="height: 50px; width: 300px;" colspan="2">
+      <div class="uploading">
+        <div class="mblock">
+          <div class="mblock spinner"></div>
+          <div class="body-copy-2 inline"> Uploading...</div>
+        </div>
+      </div>
+      <div class="upload_complete">
+        <div class="mblock">
+          <div class="web-icon-s web-icon-s-check mblock" style="margin-right: 5px;"></div>
+          <div class="body-copy-2 mblock">Success! <span class="wlink upload-greeting">Upload another?</span></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</tbody></table></div></div>
+
+      </div>
+    </div>
+
+  </div>
+</div></div></div>
+
+  </div>
+
+</div></div></div>
+  <div class="hdrb-loading hide">
+    <div class="dialog-loading-img"></div>
+  </div>
+</div></div></td>

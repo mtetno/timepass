@@ -5,9 +5,9 @@ import DashboardMiddleHeader from '../../../components/shared/DashboardMiddleHea
 import MainlineContentComponent from './MainlineContentComponent';
 
 
-const MainlineMarkup = ({mainlineInfo,mainLineEditName,mainLineEditAbbr,mainLineOptionsEdit,onMainLineEditDialogOpen}) => {
+const MainlineMarkup = ({mainlineInfo,mainLineEditName,mainLineEditAbbr,mainLineOptionsEdit,onMainLineEditDialogOpen,onEditBusinessHours}) => {
   return (<td id="content" className="app-rightbar-none app-footer-none app-sidebar-main app-subheader-default app-overlay-none app-header-default">
-         <MainlineContentComponent mainlineInfo={mainlineInfo} mainLineEditName={mainLineEditName} mainLineEditAbbr={mainLineEditAbbr} mainLineOptionsEdit={mainLineOptionsEdit} onMainLineEditDialogOpen={onMainLineEditDialogOpen}/></td>);
+         <MainlineContentComponent mainlineInfo={mainlineInfo} mainLineEditName={mainLineEditName} mainLineEditAbbr={mainLineEditAbbr} mainLineOptionsEdit={mainLineOptionsEdit} onMainLineEditDialogOpen={onMainLineEditDialogOpen} onEditBusinessHours={onEditBusinessHours}/></td>);
 
 };
 

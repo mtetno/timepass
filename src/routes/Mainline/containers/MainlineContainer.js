@@ -10,6 +10,7 @@ import BaseContainer from '../../BaseContainer/BaseContainer';
 import DashboardMiddleHeader from '../../../components/shared/DashboardMiddleHeader';
 const checkLogo = require("../../../styles/img/ic-checked.png");
 import {editMainLinePhoneNumber} from '../components/AllDialogsHtml';
+import BusinessHoursRightPopup from '../components/BusinessHoursRightPopup';
 
 class MainlineContainer extends React.Component {
   constructor(props) {
@@ -20,7 +21,8 @@ class MainlineContainer extends React.Component {
       labelEditDialogOpen: false,
       labelEditDialogLabel: "",
       labelEditDialogPhno : "",
-      labelEditDialogId: 0
+      labelEditDialogId: 0,
+      yourDeviceAdvSettingsOpen : false
     };
 
     this.onMainLineEditName = this.onMainLineEditName.bind(this);
@@ -30,6 +32,7 @@ class MainlineContainer extends React.Component {
     this.onMainLineEditDialogDismiss = this.onMainLineEditDialogDismiss.bind(this);
     this.onMainLineEditDialogSave = this.onMainLineEditDialogSave.bind(this);
     this.onMainLineLabelTextChange = this.onMainLineLabelTextChange.bind(this);
+      this.onEditBusinessHours = this.onEditBusinessHours.bind(this);
 
 
   }
@@ -47,6 +50,13 @@ class MainlineContainer extends React.Component {
     } else if (nextProps && nextProps.editing == true) {
       this.setState({showSavingDataPopup: true});
     }
+  }
+
+  onEditBusinessHours(){
+    if(this.props.businessHoursTimezoneDDValues === undefined){
+      this.props.actions.fetchBusinessHoursAndTimezoneEditDetails(this.props.accessToken);
+    }
+    this.setState({  yourDeviceAdvSettingsOpen: !this.state.yourDeviceAdvSettingsOpen });
   }
 
   componentDidMount() {
@@ -106,7 +116,9 @@ class MainlineContainer extends React.Component {
         </div>
       : undefined;
 
-    return (<div id="app" className="">
+    return (<div id="app"  className={this.state.yourDeviceAdvSettingsOpen
+        ? "rightbar-open content-overlay"
+        : undefined}>
       <BaseContainer contentTd={<MainlineMarkup mainlineInfo = {
           this.props.mainlineInfo
         }
@@ -122,7 +134,18 @@ class MainlineContainer extends React.Component {
         onMainLineEditDialogOpen = {
           this.onMainLineEditDialogOpen
         }
-        />} savingDialog={savingDialog} savingDialogComplete={savingDialogComplete} middleSideBar={<DashboardMiddleHeader/>}/> {this.state.labelEditDialogOpen ? editMainLinePhoneNumber(this.state.labelEditDialogPhno , this.state.labelEditDialogLabel , this.onMainLineLabelTextChange , this.onMainLineEditDialogSave , this.onMainLineEditDialogDismiss) : undefined}
+        onEditBusinessHours = {
+          this.onEditBusinessHours
+        }
+
+
+        />} savingDialog={savingDialog} savingDialogComplete={savingDialogComplete} middleSideBar={<DashboardMiddleHeader/>}
+        rightSideBar = {
+        <BusinessHoursRightPopup   onEditBusinessHours = {
+            this.onEditBusinessHours
+          } businessHoursTimezoneDDValues={this.props.businessHoursTimezoneDDValues} />
+        }
+        /> {this.state.labelEditDialogOpen ? editMainLinePhoneNumber(this.state.labelEditDialogPhno , this.state.labelEditDialogLabel , this.onMainLineLabelTextChange , this.onMainLineEditDialogSave , this.onMainLineEditDialogDismiss) : undefined}
     </div>);
   }
 
@@ -140,10 +163,12 @@ const mapStateToProps = (state) => ({
     editing: state.mainline.editing,
     mainlineInfo: state.mainline.mainLineInfo
       ? state.mainline.mainLineInfo.data
-      : undefined
+      : undefined,
+    businessHoursTimezoneDDValues : state.mainline.businessHoursAndTimezoneEditDetails ?
+    state.mainline.businessHoursAndTimezoneEditDetails.data.business_hours_edit : undefined
   }),
   mapDispatchToProps = (dispatch) => {
-    const {mainLineInfo, mainLineEditName, mainLineAbbrEdit, mainLineOptionsEdit, mainLinePhoneLabelEdit} = actions;
+    const {mainLineInfo, mainLineEditName, mainLineAbbrEdit, mainLineOptionsEdit, mainLinePhoneLabelEdit,fetchBusinessHoursAndTimezoneEditDetails} = actions;
 
     return {
       actions: bindActionCreators({
@@ -151,7 +176,8 @@ const mapStateToProps = (state) => ({
         mainLineEditName,
         mainLineAbbrEdit,
         mainLineOptionsEdit,
-        mainLinePhoneLabelEdit
+        mainLinePhoneLabelEdit,
+        fetchBusinessHoursAndTimezoneEditDetails
       }, dispatch)
     };
   };

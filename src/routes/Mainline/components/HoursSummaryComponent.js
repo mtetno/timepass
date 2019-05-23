@@ -58,7 +58,7 @@ class HoursSummaryComponent extends React.Component {
                     <div>
                       <div>
                         <div className="hours-summary-header iblock">Normal Business Hours</div>
-                        <button className="hours-summary-bus-hrs-edit rfloat primary-button">Edit Details</button>
+                        <button onClick={this.props.onEditBusinessHours} className="hours-summary-bus-hrs-edit rfloat primary-button">Edit Details</button>
                       </div>
                       <table className="user-table">
                         <thead>

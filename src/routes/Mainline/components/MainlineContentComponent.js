@@ -8,18 +8,18 @@ import HoursSummaryComponent from './HoursSummaryComponent';
 import HoldMusicComponent from './HoldMusicComponent';
 import CallSettingComponent from './CallSettingComponent';
 
-const MainlineContentComponent = ({mainlineInfo,mainLineEditName,mainLineEditAbbr,mainLineOptionsEdit,onMainLineEditDialogOpen}) => {
+const MainlineContentComponent = ({mainlineInfo,mainLineEditName,mainLineEditAbbr,mainLineOptionsEdit,onMainLineEditDialogOpen,onEditBusinessHours}) => {
   return (<div>
 
     <GroupSettingComponent mainlineInfo={mainlineInfo} mainLineEditName={mainLineEditName} mainLineEditAbbr={mainLineEditAbbr}
 mainLineOptionsEdit = {mainLineOptionsEdit} onMainLineEditDialogOpen={onMainLineEditDialogOpen}
     />
 
-    <ManageOperatorComponent/>
+    <ManageOperatorComponent />
 
     <div id="call-handling-view" className="form"></div>
 
-    <HoursSummaryComponent/>
+    <HoursSummaryComponent onEditBusinessHours={onEditBusinessHours}/>
 
     <HoldMusicComponent/>
 

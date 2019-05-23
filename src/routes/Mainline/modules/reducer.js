@@ -53,6 +53,12 @@ const
         businessHoursAndTimezoneEditDetails: {...action.payload},
       };
     },
+    [Constants.FETCH_BSUINESS_HR_POPUP]: (state, action) => {
+      return {
+        ...state,
+        fetchBusinessHoursPopup: {...action.payload},
+      };
+    },
   },
   initialState = { };
 

@@ -11,7 +11,10 @@ import {
   mainlineNumberLabelEditApi,
   mainlinRemoveAssignOperatorApi,
   fetchBusinessHoursApi,
-  fetchBusinessHoursAndTimezoneEditDetailsApi
+  fetchBusinessHoursAndTimezoneEditDetailsApi,
+  fetchBusinessHoursPopupApi,
+  editBusinessHoursOpenFlagApi,
+
 } from '../../../config';
 
 const fetchBegin = () => {
@@ -203,6 +206,39 @@ const fetchBegin = () => {
       });
     };
   },
+  fetchBusinessHoursPopup = (accessToken) => {
+    return(dispatch, getState) => {
+      dispatch(fetchBegin());
+      let apiPath = `${fetchBusinessHoursPopupApi.url}`;
+      let formData = new FormData();
+      formData.append(`${fetchBusinessHoursPopupApi.param_access_token}`, accessToken);
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      }).then((response) => {
+        return response.json().then((json) => {
+          dispatch(fetchEnd());
+          dispatch(fetchBusinessHoursPopupEnd(json))
+        });
+
+      }).catch((error) => {
+        dispatch(fetchEnd());
+      });
+    };
+  },
+  editBusinessHoursOpenFlag = (accessToken, flag) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${editBusinessHoursOpenFlagApi.url}`;
+      let formData = new FormData();
+      formData.append(`${editBusinessHoursOpenFlagApi.param_access_token}`, accessToken);
+      formData.append(`${editBusinessHoursOpenFlagApi.param_open_hours_flag}`, flag);
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
   fetchEnd = (payload) => {
     return {type: Constants.FETCH_END, payload};
   },
@@ -226,6 +262,9 @@ const fetchBegin = () => {
   },
   fetchBusinessHoursAndTimezoneEditDetailsEnd = (payload) => {
     return {type: Constants.MAINLINE_FETCH_BUSINNESS_HR_AND_TIMEZONE_EDIT_DETAILS, payload};
+  },
+  fetchBusinessHoursPopupEnd = (payload) => {
+    return {type: Constants.FETCH_BSUINESS_HR_POPUP, payload};
   }
 
   export default {
@@ -238,5 +277,7 @@ const fetchBegin = () => {
     mainLinePhoneLabelEdit,
     mainlinRemoveAssignOperator,
     fetchBusinessHours,
-    fetchBusinessHoursAndTimezoneEditDetails
+    fetchBusinessHoursAndTimezoneEditDetails,
+    fetchBusinessHoursPopup,
+    editBusinessHoursOpenFlag
   }
