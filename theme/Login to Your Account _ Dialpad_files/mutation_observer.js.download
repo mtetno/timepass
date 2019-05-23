@@ -1,0 +1,1 @@
+define(function(){window.observers=window.observers||{};var a=function(d,f){window.observers[d]=new MutationObserver(function(g){g.forEach(f);});var e=$(d)[0];var c={attributes:true,childList:true,characterData:true};window.observers[d].observe(e,c);};var b=function(c){window.observers[c].disconnect();};return{watch:a,unwatch:b};});

@@ -1,0 +1,157 @@
+$box-identifier-one: transparent;
+$box-identifier-two: transparent;
+$logoIcon: url("../../../styles/img/logo.png");
+
+#nav {
+  display: block;
+}
+
+
+.header-sub-leftbar {
+  height: 62px;
+}
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-size {
+  width: 20px;
+  height: 20px;
+}
+
+.logo-size-small {
+  width: 20px;
+  height: 20px;
+}
+
+.app-sidebar {
+  background-color: #182c50;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.0rem;
+}
+ 
+
+.icon-container-small {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.appIcon {
+  content: $logoIcon;
+  width: 23px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.customIcon {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.customIconAlignBottom {
+  width: 50px;
+  height: inherit;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-flex-direction: column-reverse;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.profile-picture-holder {
+  background-image: url("https://dialpad.com/avatar/user/agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAqI_hudMKDA.png?version=1e86ca8d587115dac11fd27c63895668");
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  line-height: 100px;
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+}
+
+.header-top {
+  height: 50px;
+  width: auto;
+  margin: auto;
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.mainContainerCol1 {
+  width: 100%;
+  height: 100%;
+}
+
+.tableCss {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebarCol {
+  width: 50px;
+  height: 100vh;
+}
+
+.mainContentCol {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.homecontainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.nestedCointainer {
+  width: 100%;
+  position: absolute;
+}
+
+.nestedCointainerHeader {
+  height: 63px;
+  width: auto;
+  margin: auto;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.nestedCointainerBody {
+  width: 100%;
+  height: 90%;
+}
+
+
+
+
+.account-container-body {
+  position: fixed;
+  width: calc(100% - 250px);
+  height: 100%;
+}
+
+#div_ffed_0{margin-bottom: 0;}
+#div_ffed_1{display: block;}
+#div_ffed_2{display: block;}
+#div_ffed_3{margin-right: 36px;}
+#div_ffed_4{display: none !important; }

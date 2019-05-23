@@ -1,0 +1,196 @@
+$box-identifier-one: transparent;
+$box-identifier-two: transparent;
+$logoIcon: url("../../../styles/img/logo.png");
+
+.header-sub-leftbar {
+  height: 62px;
+}
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-size {
+  width: 20px;
+  height: 20px;
+}
+
+.logo-size-small {
+  width: 20px;
+  height: 20px;
+}
+
+.app-sidebar {
+  background-color: #182c50;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.0rem;
+}
+
+ 
+.icon-container-small {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.appIcon {
+  content: $logoIcon;
+  width: 23px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.customIcon {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.customIconAlignBottom {
+  width: 50px;
+  height: inherit;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-flex-direction: column-reverse;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.profile-picture-holder {
+  background-image: url("https://dialpad.com/avatar/user/agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAqI_hudMKDA.png?version=1e86ca8d587115dac11fd27c63895668");
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  line-height: 100px;
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+}
+
+.header-top {
+  height: 50px;
+  width: auto;
+  margin: auto;
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.mainContainerCol1 {
+  width: 100%;
+  height: 100%;
+}
+
+.tableCss {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebarCol {
+  width: 50px;
+  height: 100vh;
+}
+
+.mainContentCol {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.homecontainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.nestedCointainer {
+  width: 100%;
+  position: absolute;
+}
+
+.nestedCointainerHeader {
+  height: 63px;
+  width: auto;
+  margin: auto;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.nestedCointainerBody {
+  width: 100%;
+  height: 90%;
+}
+
+
+.account-container-body {
+  position: fixed;
+  width: calc(100% - 250px);
+  height: 100%;
+}
+
+#div_dab7_0{position: relative;}
+#div_dab7_1{position: relative; width: 397px; height: 200px;}
+#div_dab7_2{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+#svg_dab7_0{overflow: hidden;}
+#div_dab7_3{position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+#div_dab7_4{display: none; position: absolute; top: 210px; left: 407px; white-space: nowrap; font-family: Lato; font-size: 10px;}
+#ccd-call-volume-outbound{display:none}
+#div_dab7_5{position: relative;}
+#div_dab7_6{position: relative; width: 284px; height: 200px;}
+#div_dab7_7{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+#svg_dab7_1{overflow: hidden;}
+#div_dab7_8{position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+#div_dab7_9{display: none; position: absolute; top: 210px; left: 294px; white-space: nowrap; font-family: Lato; font-size: 10px;}
+#ccd-call-duration-outbound{display:none}
+#div_dab7_10{position: relative;}
+#div_dab7_11{position: relative; width: 214px; height: 200px;}
+#div_dab7_12{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+#svg_dab7_2{overflow: hidden;}
+#div_dab7_13{position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+#div_dab7_14{display: none; position: absolute; top: 210px; left: 224px; white-space: nowrap; font-family: Lato; font-size: 10px;}
+#div_dab7_15{position: relative;}
+#div_dab7_16{position: relative; width: 214px; height: 200px;}
+#div_dab7_17{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+#svg_dab7_3{overflow: hidden;}
+#div_dab7_18{position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+#div_dab7_19{display: none; position: absolute; top: 210px; left: 224px; white-space: nowrap; font-family: Lato; font-size: 10px;}
+#div_dab7_20{position: relative;}
+#div_dab7_21{position: relative; width: 74px; height: 200px;}
+#div_dab7_22{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+#svg_dab7_4{overflow: hidden;}
+#div_dab7_23{position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+#div_dab7_24{display: none; position: absolute; top: 210px; left: 84px; white-space: nowrap; font-family: Arial; font-size: 8px;}
+#div_dab7_25{position: relative;}
+#div_dab7_26{position: relative; width: 63px; height: 200px;}
+#div_dab7_27{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+#svg_dab7_5{overflow: hidden;}
+#div_dab7_28{position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+#div_dab7_29{display: none; position: absolute; top: 210px; left: 73px; white-space: nowrap; font-family: Arial; font-size: 8px;}
+#div_dab7_30{position: relative;}
+#div_dab7_31{position: relative; width: 104px; height: 200px;}
+#div_dab7_32{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+#svg_dab7_6{overflow: hidden;}
+#div_dab7_33{position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+#div_dab7_34{display: none; position: absolute; top: 210px; left: 114px; white-space: nowrap; font-family: Arial; font-size: 8px;}
+#div_dab7_35{display: none;}
+#div_dab7_36{display: none;}
+#div_dab7_37{text-transform: none; font-weight: normal;}
+#list-empty{margin-top: 10px;}
+#agents-list{margin-top: 10px;}
+#div_dab7_38{display: none}
+#div_dab7_39{display: none;}

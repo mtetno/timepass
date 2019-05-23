@@ -1,0 +1,201 @@
+$box-identifier-one: transparent;
+$box-identifier-two: transparent;
+$logoIcon: url("../../../styles/img/logo.png");
+$deleteIcon: url("../../../styles/img/ic-delete.png");
+
+
+.header-sub-leftbar {
+  height: 62px;
+}
+
+.web-admin-section-child-view-holder{
+      margin-top: 40px;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-size {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-size-small {
+  width: 20px;
+  height: 20px;
+}
+
+.app-sidebar {
+  background-color: #182c50;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.0rem;
+}
+
+ 
+.icon-container-small {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.appIcon {
+  content: $logoIcon;
+  width: 23px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.deleteIcon {
+  content: $deleteIcon;
+  width: 23px;
+  height: 24px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.customIcon {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.customIconAlignBottom {
+  width: 50px;
+  height: inherit;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-flex-direction: column-reverse;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.profile-picture-holder {
+  background-image: url("https://dialpad.com/avatar/user/agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAqI_hudMKDA.png?version=1e86ca8d587115dac11fd27c63895668");
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  line-height: 100px;
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+}
+
+.header-top {
+  height: 50px;
+  width: auto;
+  margin: auto;
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.mainContainerCol1 {
+  width: 100%;
+  height: 100%;
+}
+
+.tableCss {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebarCol {
+  width: 50px;
+  height: 100vh;
+}
+
+.mainContentCol {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.homecontainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.nestedCointainer {
+  width: 100%;
+  position: absolute;
+}
+
+.nestedCointainerHeader {
+  height: 63px;
+  width: auto;
+  margin: auto;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.nestedCointainerBody {
+  width: 100%;
+  height: 90%;
+}
+
+
+
+.account-container-body {
+  position: fixed;
+  width: calc(100% - 250px);
+  height: 100%;
+}
+
+
+#div_8963_0{margin: 40px 36px}
+#add-fax{margin: 17px 0 0 20px;}
+#div_8963_1{ }
+#maximum-fanout-count{margin-left: 22px;}
+#span_8963_0{font-size: 11px;}
+#operator-count{padding: 0 20px 16px;}
+#div_8963_2{ }
+#div_8963_3{ }
+#div_8963_4{}
+#div_8963_5{margin-top: 15px;}
+#div_8963_6{}
+#group-call-recording-setting-incoming{width:22px}
+#call-recording-setting-incoming{display: none;}
+#group-call-recording-setting-outgoing{width:22px}
+#call-recording-setting-outgoing{display: none;}
+#cc-advanced-recording-rule{display: none;}
+#recording-rule-disabled{display: none;}
+#recording-rule-enabled{display: none;}
+#a_8963_0{display: none;}
+#agent-can-pause-sec{display: none;}
+#group-call-recording-agent-can-pause{width:22px}
+#call-recording-agent-can-pause{display: none;}
+#div_8963_7{margin-top: 5px;}
+#div_8963_8{margin-top: 25px;}
+#table_8963_0{width: auto;}
+#td_8963_0{width: 300px;}
+#td_8963_1{padding-top: 7px;}
+#td_8963_2{width:300px; height: 25px; padding-top: 13px;}
+#td_8963_3{height: 25px; padding-top: 13px;}
+#td_8963_4{text-align: left; height: 50px;}
+#td_8963_5{text-align: right; height: 50px;}
+#td_8963_6{height: 50px; width: 300px;}
+#div_8963_9{margin-right: 5px;}
+#div_8963_10{margin-top: 25px;}
+#group-wrap-up-setting{width:22px}
+#max-wrap-up-seconds{display: none;}
+#div_8963_11{margin-left: 35px; margin-right: 14px;}
+#div_8963_12{margin-left: 35px;}
+#group-admin-eavesdrop-transparency{width:22px}
+#admin-eavesdrop-transparency{display: none;}
+#div_8963_13{margin-left: 35px; margin-right: 14px;}

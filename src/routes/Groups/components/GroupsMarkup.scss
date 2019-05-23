@@ -1,0 +1,179 @@
+$box-identifier-one: transparent;
+$box-identifier-two: transparent;
+$logoIcon: url("../../../styles/img/logo.png");
+
+
+.header-sub-leftbar {
+  height: 62px;
+}
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-size {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-size-small {
+  width: 20px;
+  height: 20px;
+}
+
+.app-sidebar {
+  background-color: #182c50;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.0rem;
+}
+
+ 
+.icon-container-small {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.appIcon {
+  content: $logoIcon;
+  width: 23px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.customIcon {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.customIconAlignBottom {
+  width: 50px;
+  height: inherit;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-flex-direction: column-reverse;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.profile-picture-holder {
+  background-image: url("https://dialpad.com/avatar/user/agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAqI_hudMKDA.png?version=1e86ca8d587115dac11fd27c63895668");
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  line-height: 100px;
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+}
+
+.header-top {
+  height: 50px;
+  width: auto;
+  margin: auto;
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.mainContainerCol1 {
+  width: 100%;
+  height: 100%;
+}
+
+.tableCss {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebarCol {
+  width: 50px;
+  height: 100vh;
+}
+
+.mainContentCol {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.homecontainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.nestedCointainer {
+  width: 100%;
+  position: absolute;
+}
+
+.nestedCointainerHeader {
+  height: 63px;
+  width: auto;
+  margin: auto;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.nestedCointainerBody {
+  width: 100%;
+  height: 90%;
+}
+
+
+
+
+.account-container-body {
+  position: fixed;
+  width: calc(100% - 250px);
+  height: 100%;
+}
+
+#operator-devices-block{width: 840px;}
+#div_959e_0{max-width: 460px;}
+#div_959e_1{margin-bottom: 2px}
+#input-voicemail-notification-group{display: none;}
+#div_959e_2{margin-bottom: 2px}
+#input-fax-notification-group{display: none;}
+#operator-devices-switch{padding-top: 3px; margin-left: 10px;}
+#div_959e_3{ }
+#operator-devices-switch-desc{margin-top: -7px;}
+#operator-devices-switch-text{max-width: 200px;}
+#group-info{padding: 0;}
+#span_959e_0{padding-left: 5px;}
+#group-abbr{width: 100px; text-transform: uppercase;}
+#group-number{width: 140px; margin-bottom: 0;}
+#group-delete{padding-top: 28px;}
+#add-fax{margin: 17px 0 0 20px;}
+#assigned{ }
+#span_959e_1{font-size: 11px;}
+#operator-count{padding: 0 20px 16px;}
+#no-operators{display: none;}
+#room-phone-help{padding-left: 14px;}
+#room-operator-count{padding: 0 20px 16px;}
+#room-operators-table{display: none;}
+#businessHours{ }
+#advanced{ }
+#div_959e_4{margin-left:20px}
+#div_959e_5{margin-left:5px}
+#td_959e_0{width: 22px;}
+#div_959e_6{margin-bottom: 2px}
+#dial-busy-operators{ }
+#div_959e_7{margin-left: 35px;}

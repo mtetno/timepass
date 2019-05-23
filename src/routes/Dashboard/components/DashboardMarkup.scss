@@ -1,0 +1,253 @@
+$box-identifier-one: transparent;
+$box-identifier-two: transparent;
+$logoIcon: url("../../../styles/img/logo.png");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-size {
+  width: 20px;
+  height: 20px;
+}
+
+.logo-size-small {
+  width: 20px !important;
+  height: 20px !important;
+  margin: auto;
+}
+
+.app-sidebar {
+  background-color: #182c50;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.icon-container {
+  width: inherit;
+height: inherit;
+
+  padding: 0px !important;
+}
+
+
+
+.icon-container-small {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.appIcon {
+  content: $logoIcon;
+  width: 23px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.customIcon {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.customIconAlignBottom {
+  width: 50px;
+  height: inherit;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-flex-direction: column-reverse;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.profile-picture-holder {
+  background-image: url("https://dialpad.com/avatar/user/agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAqI_hudMKDA.png?version=1e86ca8d587115dac11fd27c63895668");
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  line-height: 100px;
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+}
+
+.header-top {
+  height: 50px;
+  width: auto;
+  margin: auto;
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.mainContainerCol1 {
+  width: 100%;
+  height: 100%;
+}
+
+.tableCss {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebarCol {
+  width: 50px;
+  height: 100vh;
+}
+
+.mainContentCol {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.homecontainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.nestedCointainer {
+  width: 100%;
+  position: absolute;
+}
+
+.nestedCointainerHeader {
+  height: 63px;
+  width: auto;
+  margin: auto;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.nestedCointainerBody {
+  width: 100%;
+  height: 90%;
+}
+
+
+.dashboardContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.left {
+  overflow: hidden;
+  height: 100%;
+  width: 50px;
+  border: $box-identifier-one;
+}
+
+.right {
+  float: right;
+  width: calc(100% - 50px);
+  height: 100%;
+  border: $box-identifier-two;
+}
+
+.user-profile-container {
+  position: fixed;
+  margin-top: 7.0rem;
+}
+
+.user-profile-container-body {
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+
+#alertbar-logo{padding-left: 0px;}
+#tr_368b_0{height: 100%;}
+#td_368b_0{overflow: hidden;}
+#wt-link{cursor: pointer;}
+#div_368b_0{background-image:url(https://dialpad.com/avatar/user/agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAmJDT2KgJDA.png?version=a255de7a8ab1afa0b85abe3ddbd0963b)}
+#td_368b_1{width: 100px}
+#td_368b_2{width: 100px;}
+#div_368b_1{margin: 20px;}
+#div_368b_2{background-image:url(https://dialpad.com/avatar/user/agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAmJDT2KgJDA.png?version=a255de7a8ab1afa0b85abe3ddbd0963b)}
+#div_368b_3{max-width: 500px}
+#div_368b_4{margin-left: 10px}
+#div_368b_5{width:500px;}
+#user-first-name{width:180px}
+#user-last-name{width:180px}
+#div_368b_6{margin-left: 10px;}
+#div_368b_7{margin-top: 7px;}
+#div_368b_8{margin: 0 6px 0;}
+#input-display-all-timezones-checkbox{display: none;}
+#contact-sources-wrapper{margin-top: 20px;}
+#div_368b_9{margin-top: 2px;}
+#div_368b_10{display: none}
+#div_368b_11{display: none}
+#div_368b_12{display: none}
+#div_368b_13{display: none}
+
+
+#div_cdd6_0{width:500px;}
+#user-first-name{width:180px}
+#user-last-name{width:180px}
+#div_cdd6_1{margin-left: 10px;}
+.saving-content{
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
+.dialog-wrapper{
+  margin: auto;
+}
+
+#greeting-name{margin-bottom: 0px;}
+#dialog-loading{display: none;}
+
+
+#div_fae1_0{border-bottom: 1px solid #e0e0e0;}
+#div_fae1_1{margin-top: 10px; margin-bottom: 10px;}
+#personal-display-caller{display: none;}
+#personal-display-switch{display: none;}
+#div_fae1_2{border-bottom: 1px solid #e0e0e0;}
+#div_fae1_3{margin-top: 10px; margin-bottom: 10px;}
+#department-display-caller{display: none;}
+#department-display-department{display: none;}
+#div_fae1_4{margin-top: 10px; margin-bottom: 10px;}
+#executive-display-caller{display: none;}
+#executive-display-executive{display: none;}
+#div_fae1_5{margin-top: 35px;}
+#div_fae1_6{margin-bottom: 2px}
+#input-require-answer-conf{display: none;}
+#div_fae1_7{margin-top: 35px;}
+
+
+.advYourDeviceLabel{
+  font-size: 11px ;
+}
+
+.confirm-dialog-padding-bottom{
+padding-bottom: 10px;
+}
+.verify-spinner{
+  margin-left: 30px;
+  margin-bottom: -3px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.verify-spinner-parent{
+
+  position: inherit;
+margin-left: 40%;
+
+//   margin-left: 40%;
+// margin-top: 15px;
+// position: inherit;
+}
+
+.base-content-height{height: 100%;}

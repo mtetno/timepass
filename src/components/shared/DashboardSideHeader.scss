@@ -1,0 +1,39 @@
+$box-identifier-one: transparent;
+$box-identifier-two: transparent;
+$logoIcon: url("../../styles/img/logo.png");
+
+
+.logo-size-small {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.app-sidebar {
+  background-color: #182c50;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.icon-container {
+  width: 32px !important;
+    height: 32px !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.0rem;
+  margin: auto;
+}
+
+ .breadcrumbs{
+margin-bottom: 5px;
+ }
+
+ #dialog-wrapper{
+   margin-top: 20%;
+ }
+
+
+.hp-polycom-x50{
+  background-image: url(https://dialpad.com/static/compiled/web/polycom_x50_450.5b27b71c.png);
+}
