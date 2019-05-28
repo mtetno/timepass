@@ -1,0 +1,1220 @@
+{
+	"info": {
+		"_postman_id": "53d03f7e-a683-483a-84c3-d1acbcd12aba",
+		"name": "efone profile",
+		"description": "The efone profile apis will be available in this collection.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Your Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c2e44d3f-c06f-41e4-84ab-44fd89a7f00d",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				},
+				"description": "Your Profile\n\nParam             required/optional\n\nAccess_token      required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile Name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "andrew ",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "aa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/profile_edit_name",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"profile_edit_name"
+					]
+				},
+				"description": "Edit Profile Name\n\nParams            required/optional\n\nAccess_token\t   required\n\nfirst_name         required any one firstname/lastname\n\nlast_name         required any one firstname/lastname\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Change Your Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "current_password",
+							"value": "business@123",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "business@123",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "business@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/change_password",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"change_password"
+					]
+				},
+				"description": "Profile Change Your Password\n\n\nParams             required/optional\n\naccess_token\t\trequired\n\ncurrent_password    required\n\nnew_password        required\n\nconfirm_assword     required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User & VoiceMail Pin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "voicemail_pin",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/change_voicemail_pin",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"change_voicemail_pin"
+					]
+				},
+				"description": "Change Voice Mail Pin\n\nParams            required/optional\n\naccess_token\t  required\n\nvoicemail_pin     required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Caller ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "mainline_number:1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/caller_id_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"caller_id_edit"
+					]
+				},
+				"description": "Edit Caller ID \n\n\nNote : id param values should be like mainline_number:1,phone_number:2\n\nParams            required/optional\n\naccess_token\t  required\n\nid                required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Timezone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "time_zone",
+							"value": "Asia/kolkata",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/timezone_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"timezone_edit"
+					]
+				},
+				"description": "Edit Timezone\n\n\nParams           required/optional\n\naccess_token\t required\n\ntimezone\t\t required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Ring Duration ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "ring_duration",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/ring_duration_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"ring_duration_edit"
+					]
+				},
+				"description": "Edit Ring Duration \n\n\nParams           required/optional\n\naccess_token\t required\n\nring_duration    required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Call Handling & Voicemail Greeting Sound Name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "call_hand_sound_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sound_name",
+							"value": "abc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/call_hand_vm_sound_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"call_hand_vm_sound_edit"
+					]
+				},
+				"description": "Edit Call Handling & Voicemail Greeting Sound Name\n\nParams           required/optional\n\naccess_token     required\n\ncall_hand_sound_id\trequired\n\nsound_name          required"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Call Handling & Voicemail Greeting Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "call_hand_sound_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/call_hand_vm_sound_delete",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"call_hand_vm_sound_delete"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						},
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				},
+				"description": "Remove Call Handling & Voicemail Greeting Sound File\n\n\nParams             required/optional\n\naccess_token\t   required\n\ncall_hand_sound_id required"
+			},
+			"response": []
+		},
+		{
+			"name": "Upload  Call Handling & Voicemail Greeting Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "sound_file",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/call_handling_sound_upload",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"call_handling_sound_upload"
+					]
+				},
+				"description": "Upload  Call Handling & Voicemail Greeting Sound File\n\nNote: sound_file param must be file type\n\nParams            required/optional\n\naccess_token      required\n\nsound_file\t\t  required"
+			},
+			"response": []
+		},
+		{
+			"name": "Change  Call Handling & Voicemail Greeting Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "call_hand_sound_id",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/change_call_hand_vm_sound",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"change_call_hand_vm_sound"
+					]
+				},
+				"description": "Change  Call Handling & Voicemail Greeting Sound File\n\nParams         required/optional\n\naccess_token\trequired\n\ncall_hand_sound_id required"
+			},
+			"response": []
+		},
+		{
+			"name": "Your Devices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/your_devices",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"your_devices"
+					]
+				},
+				"description": "Your Devices\n\n\nParams      required/optional\n\naccess_token\trequired"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit For Your Safety",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "73258b52aae694a3a9e6301958c04222",
+							"type": "text"
+						},
+						{
+							"key": "street_address",
+							"value": "film nagar",
+							"type": "text"
+						},
+						{
+							"key": "apt_building_text",
+							"value": "B44",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Hyderabad",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "TG",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "500033",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/profiles/account_safty_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"account_safty_edit"
+					]
+				},
+				"description": "For Your Safety\n\n\nParams            required/optional\n\naccess_token\t  required\n\nstreet_addess     optional\n\napt_building_text\t  optional\n\ncity              optional\n\n\nstate             optional\n\nzip_code          optional"
+			},
+			"response": []
+		},
+		{
+			"name": "efone IVR Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "business@efone.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "business@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/login",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "efone IVR Login\n\n\nParams           required/optional\n\nusername         required\n\npassword         required"
+			},
+			"response": []
+		},
+		{
+			"name": "List of Call Handling & Voicemail ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/call_handling_voicemail",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"call_handling_voicemail"
+					]
+				},
+				"description": "adv_miss_call_routing = 1 (To Voice mail)\nadv_miss_call_routing = 2 (To  Message (no voice mail))\nadv_miss_call_routing = 3 (To Team member/ room phone)\nadv_miss_call_routing = 4 (To  A department).\n\n\nParams          required/optional\n\naccess_token    required"
+			},
+			"response": []
+		},
+		{
+			"name": "Account Forwarding  Number Add in VoiceMail & Callhandling ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "fwd_number",
+							"value": "14005009",
+							"type": "text"
+						},
+						{
+							"key": "ring_device",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "last_connected",
+							"value": "2019-01-10 12:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/account_fwd_number",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"account_fwd_number"
+					]
+				},
+				"description": "Account Forwarding  Number Add in VoiceMail & Callhandling \n\n\nNote: \n  1).type param\n    1 is for forwarding number\n    2 is for deskphone\n  2).fwd_number param key is same for both types.\n  \n  \n  Params         required/optional\n  \n  access_token\t required\n  \n  type           required\n  \n  fwd_number     required\n  \n  ring_device    required\n  \n  last_connected required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Receive Email Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "receive_email_notification",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/receive_email_notification_edit",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"receive_email_notification_edit"
+					]
+				},
+				"description": "Edit Receive Email Notification\n\nParams       required/optional\n\naccess_token\trequired"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Advance Missed Call Route Options",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "route_option",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/adv_miss_call_route_opt_edit",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"adv_miss_call_route_opt_edit"
+					]
+				},
+				"description": "Edit Advance Missed Call Route Options\n\nParams        required/optional\n\naccess_token\trequired\n\nroute_option    required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Advanced Missed Call Department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "dept_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/adv_miss_call_dept_edit",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"adv_miss_call_dept_edit"
+					]
+				},
+				"description": "Edit Advanced Missed Call Department\n\nParams         required/optional\n\n\naccess_token   required\n\n\ndept_id        required\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Advanced Missed Call Team Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "team_member_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/adv_miss_call_team_member_edit",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"adv_miss_call_team_member_edit"
+					]
+				},
+				"description": "Edit Advanced Missed Call Team Member\n\n\nParams           required/optional\n\n\naccess_token\t required\n\nteam_member_id   required"
+			},
+			"response": []
+		},
+		{
+			"name": "Your Safety List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/your_safety_list",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"your_safety_list"
+					]
+				},
+				"description": "Your Safety List\n\n\nParams        required/optional\n\naccess_token  required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Your Safety Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/your_safety_edit_data",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"your_safety_edit_data"
+					]
+				},
+				"description": "Edit Your Safety Data\n\n\nParams      required/optional\n\n\naccess_token required"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Your Device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/remove_your_device",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"remove_your_device"
+					]
+				},
+				"description": "Remove Your Device\n\n\nParams       required/optional\n\naccess_token  required\n\ndevive_id     required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Ring Device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ring_device",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/your_safety_edit_data",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"your_safety_edit_data"
+					]
+				},
+				"description": "Edit Ring Device\n\n\nParams     required/optional\n\n\naccess_token   required\n\ndevice_id      required\n\nring_device    required"
+			},
+			"response": []
+		},
+		{
+			"name": "List Account Forward Numbers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/account_fwd_num_list",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"account_fwd_num_list"
+					]
+				},
+				"description": "List Account Forward Numbers\n\nParams      required/optional\n\naccess_token  required"
+			},
+			"response": []
+		},
+		{
+			"name": "Your Devices Advanced settings List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/your_device_advanced_settings",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"your_device_advanced_settings"
+					]
+				},
+				"description": "Your Devices Advanced settings List\n\n\nParams         required/optional\n\n\naccess_token   required"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Your Devices Advanced settings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "personal_dialpad_opt",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "dept_mainline_opt",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "executives_opt",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ans_fwd_calls_opt",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "fwd_num_id[0]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "fwd_num_id[1]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "fwd_num_id[2]",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/your_device_advanced_settings_edit",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"your_device_advanced_settings_edit"
+					]
+				},
+				"description": "Edit Your Devices Advanced settings\n\nNOTE:fwd_num_id param type Must be an array\n\n\nParams                   required/optional\n\naccess_token             required\n\npersonnel_dialpad_opt    required\n\ndept_mainline_opt        required\n\nexecutives_opt           required\n\nans_fwd_calls_opt        required\n\n\nfwd_num_id              required (array)"
+			},
+			"response": []
+		},
+		{
+			"name": "Change To Message Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "call_hand_sound_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "sound_type",
+							"value": "ADV_MISS_CALL",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/change_to_message_sound",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"change_to_message_sound"
+					]
+				},
+				"description": "Change To Message Sound File\n\n\nParams             required/optional\n\naccess_token       required\n\ncall_hand_sound_id    required\n\nsound_type         required\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Advanced Missed call Routing Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "sound_file",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "http://68.183.198.108/api/profiles/adv_call_route_sound_upload",
+					"protocol": "http",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"profiles",
+						"adv_call_route_sound_upload"
+					]
+				},
+				"description": "Upload Advanced Missed call Routing Sound File\n\nNote :sound file param type as file\n\nParams         required/optional\n\naccess_token\trequired\n\nsound_file      required"
+			},
+			"response": []
+		}
+	]
+}

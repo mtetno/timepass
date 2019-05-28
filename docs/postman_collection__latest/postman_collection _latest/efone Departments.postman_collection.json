@@ -1,0 +1,1616 @@
+{
+	"info": {
+		"_postman_id": "21ac14a6-e1bd-43af-8e88-49ec45c3bb0b",
+		"name": "efone Departments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Departments Info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Departments Info Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "deparment1212",
+							"type": "text"
+						},
+						{
+							"key": "abbrivation",
+							"value": "deptL",
+							"type": "text"
+						},
+						{
+							"key": "notifications_for_voicemail",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "notifications_for_fax",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/department_info_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"department_info_edit"
+					]
+				},
+				"description": "Reqiured Fields  Optinal fields\n\naccess_token\t name\n\n\t\t\t\t abbrivation\n\t\t\t\t \n\t\t\t\t notifications_for_voicemail\n\t\t\t\t \n\t\t\t\t notifications_for_fax\n\t\t\t\nNote:When you hit this api you sholud send any one of optional filed\t\t\t\n\t\t\t\n\t\t\t\t \n\t\t\t\t "
+			},
+			"response": []
+		},
+		{
+			"name": "3. Delete Department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/department_delete",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"department_delete"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_id"
+			},
+			"response": []
+		},
+		{
+			"name": "4. Department Assign Operators",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "team_member_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/assign_operators",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"assign_operators"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nteam_member_id"
+			},
+			"response": []
+		},
+		{
+			"name": "5. Department Assingned Operators List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/assign_operators_list",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"assign_operators_list"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "6. Delete Assigned Operator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "account_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/remove_assign_operators",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"remove_assign_operators"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\naccount_id"
+			},
+			"response": []
+		},
+		{
+			"name": "7. Department Label Edit Popup Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_number_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/dept_label_pop_data",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"dept_label_pop_data"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_number_id"
+			},
+			"response": []
+		},
+		{
+			"name": "8. Deapartment Phone Number Label Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_number_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "Hello123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/dept_number_label_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"dept_number_label_edit"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_number_id\n\nlabel"
+			},
+			"response": []
+		},
+		{
+			"name": "9. Delete Department Phone Number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_phone_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/dept_phone_number_delete",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"dept_phone_number_delete"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_phone_id"
+			},
+			"response": []
+		},
+		{
+			"name": "10. Department Business Hours List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/business_hours",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"business_hours"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "11. Department Timezone List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/bus_hours_timezone_list",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"bus_hours_timezone_list"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "12. Departments  Business  Hours Edit Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/bus_hours_edit_data",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"bus_hours_edit_data"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "13. Edit Department Open Hours Flag ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "open_hours_flag",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/business_hours_open_hr_flag_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"business_hours_open_hr_flag_edit"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nopen_hours_flag"
+			},
+			"response": []
+		},
+		{
+			"name": "14. Edit Department Timezone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "time_zone",
+							"value": "asia/kolkata",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/timezone_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"timezone_edit"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ntime_zone"
+			},
+			"response": []
+		},
+		{
+			"name": "15. Edit Department Business Hours Time",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "bus_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "same_all_weekdays",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "same_all_weeks",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "hours[0]",
+							"value": "08:30:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[1]",
+							"value": "06:15:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[2]",
+							"value": "03:30:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[3]",
+							"value": "03:15:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[4]",
+							"value": "07:30:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[5]",
+							"value": "09:15:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[6]",
+							"value": "05:30:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[7]",
+							"value": "07:15:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[8]",
+							"value": "10:30:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[9]",
+							"value": "05:15:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[10]",
+							"value": "09:30:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[11]",
+							"value": "04:15:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[12]",
+							"value": "08:30:00",
+							"type": "text"
+						},
+						{
+							"key": "hours[13]",
+							"value": "07:15:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/business_hours_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"business_hours_update"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nsame_all_weekdays\nsame_all_weeks\nhours[0]\nhours[1]\nhours[2]\nhours[3]\nhours[4]\nhours[5]\nhours[6]\nhours[7]\nhours[8]\nhours[9]\nhours[10]\nhours[11]\nhours[12]\nhours[13]\n"
+			},
+			"response": []
+		},
+		{
+			"name": "16. Business Hours Set Rules Routing Option(Operator or other route)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "send_call_type",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/bus_open_close_hour_rules",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"bus_open_close_hour_rules"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nrule_hour_type\n\nsend_call_type"
+			},
+			"response": []
+		},
+		{
+			"name": "17. Business Hours Operator Routing Option",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "operator_type_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/bus_operator_routing_type",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"bus_operator_routing_type"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\noperator_type_id\n\nrule_hour_type"
+			},
+			"response": []
+		},
+		{
+			"name": "18. Business Hours Fixed Order Team Member List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "operator_type_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/bus_operator_routing_type",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"bus_operator_routing_type"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nopen_hour_type\n\nopen_order_type\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "19. Change  Business Hours Fixed Order  Team Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "operator_type_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/bus_operator_routing_type",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"bus_operator_routing_type"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\noperator_type_id\n\nrule_hour_type"
+			},
+			"response": []
+		},
+		{
+			"name": "20. Change Sound File  Drop Down",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "bus_sound_id",
+							"value": "41",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "HOLD_GREETING",
+							"type": "text"
+						},
+						{
+							"key": "sound_type",
+							"value": "DEFAULT_HOLD_GREETING",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/change_sound_file",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"change_sound_file"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nbus_sound_id\n\nrule_hour_type\n\nsound_type"
+			},
+			"response": []
+		},
+		{
+			"name": "21. Business Hours Other Routing Options",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "routing_options_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/bus_other_routing_options",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"bus_other_routing_options"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nrule_hour_type\n\nrouting_options_id\n\nNote : In that API routing option 1 only updated"
+			},
+			"response": []
+		},
+		{
+			"name": "22. Edit Sound File Name ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "bus_sound_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "sound_name",
+							"value": "HelloTest",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/routing_options_sound_file_name_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"routing_options_sound_file_name_edit"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nbus_sound_id\n\nsound_name"
+			},
+			"response": []
+		},
+		{
+			"name": "23. Delete Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "bus_sound_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/routing_options_sound_file_delete",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"routing_options_sound_file_delete"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nbus_sound_id"
+			},
+			"response": []
+		},
+		{
+			"name": "24.  Upload Sound File ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "DEPT_ADV_SETTINGS",
+							"type": "text"
+						},
+						{
+							"key": "sound_type",
+							"value": "DEPT_ADV_SETTINGS",
+							"type": "text"
+						},
+						{
+							"key": "sound_file",
+							"value": null,
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/automated_sound_upload",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"automated_sound_upload"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nrule_hour_type\n\nsound_type\n\nsound_file\n"
+			},
+			"response": []
+		},
+		{
+			"name": "25.  Change Business Hours Department DropDown",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/automated_department_change",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"automated_department_change"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_id\n\nrule_hour_type\n\ntype\n\nNote : Here type => 1 menas fallback options Departmnet Change\n\n\t\t\ttype => 2 menas other routing options Departmnet Change\n"
+			},
+			"response": []
+		},
+		{
+			"name": "26. Change Business Hours Department Team Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "team_member_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/team_member_change",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"team_member_change"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nteam_member_id\n\nrule_hour_type\n\ntype\n\nNote: here tyep =>1 fallback options team member change\n\n\t\t\ttyep =>2 Other Roting options team member change"
+			},
+			"response": []
+		},
+		{
+			"name": "27. Edit Business Hours Ring Duration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "ring_duration",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/ring_duration_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"ring_duration_edit"
+					]
+				},
+				"description": "Required Field\n\naccess_token\n\nring_duration"
+			},
+			"response": []
+		},
+		{
+			"name": "28. Business Hours Response Menu Options Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "option_id",
+							"value": "opt_id6",
+							"type": "text"
+						},
+						{
+							"key": "option_label",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "option_val",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/automated_response_menu_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"automated_response_menu_update"
+					]
+				},
+				"description": "Required Fields \t Optional \n\naccess_token    \toption_val\n\nrule_hour_type\n\noption_label\n\n\n\ntype"
+			},
+			"response": []
+		},
+		{
+			"name": "29. Edit Business Hours Hold Queue Options ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "hold_queue_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "hold_queue_size",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "queue_wait_time_mins",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "queue_wait_time_seconds",
+							"value": "14",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/hold_queue_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"hold_queue_update"
+					]
+				},
+				"description": "Required Fields   Optional fields\n\naccess_token     hold_queue_status\n\n\t\t\t\thold_queue_size\n\t\t\t\t\n\t\t\t\tqueue_wait_time_mins\n\t\t\t\t\n\t\t\t\tqueue_wait_time_seconds\n\t\t\t\t\n\t\t\t\tNote: If Update Hold queue options you must send any one of optional field\n\t\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "30. Business Hours Fallback Options Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "fallback_option_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/fallback_options_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"fallback_options_update"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nfallback_option_id\n\nNote :should send fallback_option_id  must 1"
+			},
+			"response": []
+		},
+		{
+			"name": "31. Add Holiday",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "holiday_name",
+							"value": "holiday123",
+							"type": "text"
+						},
+						{
+							"key": "holiday_repeat",
+							"value": "annually",
+							"type": "text"
+						},
+						{
+							"key": "holiday_date",
+							"value": "2019-05-24 10:57:27",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/add_holiday",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"add_holiday"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nholiday_name\n\nholiday_repeat\n\nholiday_date"
+			},
+			"response": []
+		},
+		{
+			"name": "32. Change Holiday",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "holiday_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/change_holiday",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"change_holiday"
+					]
+				},
+				"description": "Required Fields \n\naccess_token\n\nholiday_id"
+			},
+			"response": []
+		},
+		{
+			"name": "33. Holiday Hours List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/holiday_hours",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"holiday_hours"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "34. Hold Music List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/dept_hold_music_list",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"dept_hold_music_list"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "35. Departments Advanced Settings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/dept_adv_settings",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"dept_adv_settings"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "36. Departments Advanced Settings Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_adv_settings_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "record_all_calls_to_dept",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "calls_waiting_operators",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/dept_adv_settings_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"dept_adv_settings_update"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_adv_settings_id\n\nrecord_all_calls_to_dept\n\ncalls_waiting_operators"
+			},
+			"response": []
+		},
+		{
+			"name": "37. Validate Departments Advanced Settings Number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_adv_settings_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "validate_number",
+							"value": "12001367",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/departments/validate_dept_adv_settings_number",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"departments",
+						"validate_dept_adv_settings_number"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_adv_settings_id\n\nvalidate_number"
+			},
+			"response": []
+		}
+	]
+}

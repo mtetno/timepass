@@ -59,6 +59,12 @@ const
         fetchBusinessHoursPopup: {...action.payload},
       };
     },
+    [Constants.VIEW_POPUP_MEMBERS_LIST_FIXED_ROUNDROBIN]: (state, action) => {
+      return {
+        ...state,
+        popupMembersListFixedAndRoundRobin: {...action.payload},
+      };
+    },
   },
   initialState = { };
 

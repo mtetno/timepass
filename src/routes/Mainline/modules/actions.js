@@ -14,7 +14,14 @@ import {
   fetchBusinessHoursAndTimezoneEditDetailsApi,
   fetchBusinessHoursPopupApi,
   editBusinessHoursOpenFlagApi,
-
+  editTimezoneForBusinessHrAndCallRoutingApi,
+  updateBusinessHoursApi,
+  setRulesForOpenAndCloseHoursApi,
+  businessHoursOperationOptionsApi,
+  editBusinessHoursOtherRoutingOptionApi,
+  viewPopupDataForFixedAndRoundRobinApi,
+  changeAutomaticGreetingSoundFileApi,
+  mainLineEditSoundFileNameApi
 } from '../../../config';
 
 const fetchBegin = () => {
@@ -198,11 +205,13 @@ const fetchBegin = () => {
       }).then((response) => {
         return response.json().then((json) => {
           dispatch(fetchEnd());
+          dispatch(editEnd());
           dispatch(fetchBusinessHoursAndTimezoneEditDetailsEnd(json))
         });
 
       }).catch((error) => {
         dispatch(fetchEnd());
+        dispatch(editEnd());
       });
     };
   },
@@ -218,11 +227,13 @@ const fetchBegin = () => {
       }).then((response) => {
         return response.json().then((json) => {
           dispatch(fetchEnd());
+          dispatch(editEnd());
           dispatch(fetchBusinessHoursPopupEnd(json))
         });
 
       }).catch((error) => {
         dispatch(fetchEnd());
+        dispatch(editEnd());
       });
     };
   },
@@ -233,6 +244,131 @@ const fetchBegin = () => {
       let formData = new FormData();
       formData.append(`${editBusinessHoursOpenFlagApi.param_access_token}`, accessToken);
       formData.append(`${editBusinessHoursOpenFlagApi.param_open_hours_flag}`, flag);
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
+  editTimezoneForBusinessHrAndCallRouting = (accessToken, timezone) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${editTimezoneForBusinessHrAndCallRoutingApi.url}`;
+      let formData = new FormData();
+      formData.append(`${editTimezoneForBusinessHrAndCallRoutingApi.param_access_token}`, accessToken);
+      formData.append(`${editTimezoneForBusinessHrAndCallRoutingApi.time_zone}`, timezone);
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
+  updateBusinessHours = (accessToken, businessId,allWeekdays,allWeeks,newHours) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${updateBusinessHoursApi.url}`;
+      let formData = new FormData();
+      formData.append(`${updateBusinessHoursApi.param_access_token}`, accessToken);
+      formData.append(`${updateBusinessHoursApi.bus_id}`, businessId);
+      formData.append(`${updateBusinessHoursApi.same_all_weekdays}`, allWeekdays ? "1" : "2");
+      formData.append(`${updateBusinessHoursApi.same_all_weeks}`, allWeeks ? "1" : "2" );
+      formData.append(`${updateBusinessHoursApi.hours}`, newHours);
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
+  setRulesForOpenAndCloseHours = (accessToken, hrType,sendCallType) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${setRulesForOpenAndCloseHoursApi.url}`;
+      let formData = new FormData();
+      formData.append(`${setRulesForOpenAndCloseHoursApi.param_access_token}`, accessToken);
+      formData.append(`${setRulesForOpenAndCloseHoursApi.rule_hour_type}`, hrType);
+      formData.append(`${setRulesForOpenAndCloseHoursApi.send_call_type}`, sendCallType);
+
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
+  businessHoursOperationOptions = (accessToken, hrType,operationType) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${businessHoursOperationOptionsApi.url}`;
+      let formData = new FormData();
+      formData.append(`${businessHoursOperationOptionsApi.param_access_token}`, accessToken);
+      formData.append(`${businessHoursOperationOptionsApi.rule_hour_type}`, hrType);
+      formData.append(`${businessHoursOperationOptionsApi.operator_type_id}`, operationType);
+
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
+  editBusinessHoursOtherRoutingOption = (accessToken, hrType,id) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${editBusinessHoursOtherRoutingOptionApi.url}`;
+      let formData = new FormData();
+      formData.append(`${editBusinessHoursOtherRoutingOptionApi.param_access_token}`, accessToken);
+      formData.append(`${editBusinessHoursOtherRoutingOptionApi.rule_hour_type}`, hrType);
+      formData.append(`${editBusinessHoursOtherRoutingOptionApi.routing_options_id}`, id);
+
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
+  viewPopupDataForFixedAndRoundRobin = (accessToken,ruleType,openOrderType) => {
+    return(dispatch, getState) => {
+      dispatch(fetchBegin());
+      let apiPath = `${viewPopupDataForFixedAndRoundRobinApi.url}`;
+      let formData = new FormData();
+      formData.append(`${viewPopupDataForFixedAndRoundRobinApi.param_access_token}`, accessToken);
+      formData.append(`${viewPopupDataForFixedAndRoundRobinApi.rule_hour_type}`, ruleType);
+      formData.append(`${viewPopupDataForFixedAndRoundRobinApi.open_order_type}`, openOrderType);
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      }).then((response) => {
+        return response.json().then((json) => {
+          dispatch(fetchEnd());
+          dispatch(viewPopupDataForFixedAndRoundRobinEnd(json))
+        });
+
+      }).catch((error) => {
+        dispatch(fetchEnd());
+      });
+    };
+  },
+  changeAutomaticGreetingSoundFile = (accessToken, soundId,soundType,ruleHrType) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${changeAutomaticGreetingSoundFileApi.url}`;
+      let formData = new FormData();
+      formData.append(`${changeAutomaticGreetingSoundFileApi.param_access_token}`, accessToken);
+      formData.append(`${changeAutomaticGreetingSoundFileApi.bus_sound_id}`, soundId);
+      formData.append(`${changeAutomaticGreetingSoundFileApi.sound_type}`, soundType);
+      formData.append(`${changeAutomaticGreetingSoundFileApi.rule_hour_type}`, ruleHrType);
+      return fetch(apiPath, {
+        method: 'POST',
+        body: formData
+      })
+    };
+  },
+  mainLineEditSoundFileName = (accessToken, soundId,soundName) => {
+    return(dispatch, getState) => {
+      dispatch(editBegin());
+      let apiPath = `${mainLineEditSoundFileNameApi.url}`;
+      let formData = new FormData();
+      formData.append(`${mainLineEditSoundFileNameApi.param_access_token}`, accessToken);
+      formData.append(`${mainLineEditSoundFileNameApi.soundId}`, hrType);
+      formData.append(`${mainLineEditSoundFileNameApi.soundName}`, id);
       return fetch(apiPath, {
         method: 'POST',
         body: formData
@@ -265,6 +401,9 @@ const fetchBegin = () => {
   },
   fetchBusinessHoursPopupEnd = (payload) => {
     return {type: Constants.FETCH_BSUINESS_HR_POPUP, payload};
+  },
+  viewPopupDataForFixedAndRoundRobinEnd = (payload) => {
+    return {type: Constants.VIEW_POPUP_MEMBERS_LIST_FIXED_ROUNDROBIN, payload};
   }
 
   export default {
@@ -279,5 +418,13 @@ const fetchBegin = () => {
     fetchBusinessHours,
     fetchBusinessHoursAndTimezoneEditDetails,
     fetchBusinessHoursPopup,
-    editBusinessHoursOpenFlag
+    editBusinessHoursOpenFlag,
+    editTimezoneForBusinessHrAndCallRouting,
+    updateBusinessHours,
+    setRulesForOpenAndCloseHours,
+    businessHoursOperationOptions,
+    editBusinessHoursOtherRoutingOption,
+    viewPopupDataForFixedAndRoundRobin,
+    changeAutomaticGreetingSoundFile,
+    mainLineEditSoundFileName
   }

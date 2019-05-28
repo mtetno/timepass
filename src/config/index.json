@@ -64,7 +64,7 @@
     "param_access_token": "access_token",
     "param_current_password": "current_password",
     "param_new_password": "new_password",
-    "param_confirm_password" : "confirm_password"
+    "param_confirm_password": "confirm_password"
   },
   "editVoicePinApi": {
     "url": "http://68.183.198.108/api/profiles/change_voicemail_pin",
@@ -120,7 +120,7 @@
   "editReceiveEmailOptionApi": {
     "url": "http://68.183.198.108/api/profiles/receive_email_notification_edit",
     "param_access_token": "access_token",
-    "param_receive_email_notification":"receive_email_notification"
+    "param_receive_email_notification": "receive_email_notification"
   },
   "editAdvMisscallRouteOptionApi": {
     "url": "http://68.183.198.108/api/profiles/adv_miss_call_route_opt_edit",
@@ -156,7 +156,7 @@
   "removeYourDeviceApi": {
     "url": "http://68.183.198.108/api/profiles/remove_your_device",
     "param_access_token": "access_token",
-    "param_device_id" : "device_id"
+    "param_device_id": "device_id"
   },
   "yourDeviceAdvSettingsApi": {
     "url": "http://68.183.198.108/api/profiles/your_device_advanced_settings",
@@ -180,7 +180,7 @@
   "uploadAdvMisscallRouteAudioApi": {
     "url": "http://68.183.198.108/api/profiles/adv_call_route_sound_upload",
     "param_access_token": "access_token",
-    "param_sound_file":"sound_file"
+    "param_sound_file": "sound_file"
   },
   "mainLineInfoApi": {
     "url": "http://68.183.198.108/api/mainline",
@@ -193,40 +193,40 @@
   "mainLineAddOperatorApi": {
     "url": "http://68.183.198.108/api/mainline/assign_operators",
     "param_access_token": "access_token",
-    "param_team_member_id":"team_member_id"
+    "param_team_member_id": "team_member_id"
   },
   "mainLineEditNameApi": {
     "url": "http://68.183.198.108/api/mainline/mainline_name_edit",
     "param_access_token": "access_token",
-    "param_name":"name"
+    "param_name": "name"
   },
   "mainLineAbbrEditApi": {
     "url": "http://68.183.198.108/api/mainline/mainline_abbrivation_edit",
     "param_access_token": "access_token",
-    "param_abbrivation":"abbrivation"
+    "param_abbrivation": "abbrivation"
   },
   "mainLineOptionsEditApi": {
     "url": "http://68.183.198.108/api/mainline/mainline_options_edit",
     "param_access_token": "access_token",
-    "param_calls_status":"calls_status",
-    "param_notifications_for_voicemail":"notifications_for_voicemail",
-    "param_notifications_for_fax":"notifications_for_fax"
+    "param_calls_status": "calls_status",
+    "param_notifications_for_voicemail": "notifications_for_voicemail",
+    "param_notifications_for_fax": "notifications_for_fax"
   },
   "mainlineNumberLabelEditApi": {
     "url": "http://68.183.198.108/api/mainline/mainline_number_label_edit",
     "param_access_token": "access_token",
-    "param_mainline_number_id":"mainline_number_id",
-    "param_label":"label"
+    "param_mainline_number_id": "mainline_number_id",
+    "param_label": "label"
   },
   "mainlineNumberLabelDataApi": {
     "url": "http://68.183.198.108/api/mainline/mainline_number_label_edit_data",
     "param_access_token": "access_token",
-    "param_mainline_number_id":"mainline_number_id"
+    "param_mainline_number_id": "mainline_number_id"
   },
   "mainlinRemoveAssignOperatorApi": {
     "url": "http://68.183.198.108/api/mainline/remove_assign_operators",
     "param_access_token": "access_token",
-    "param_account_id":"account_id"
+    "param_account_id": "account_id"
   },
   "fetchBusinessHoursApi": {
     "url": "http://68.183.198.108/api/mainline/business_hours",
@@ -243,7 +243,57 @@
   "editBusinessHoursOpenFlagApi": {
     "url": "http://68.183.198.108/api/mainline/business_hours_open_hr_flag_edit",
     "param_access_token": "access_token",
-    "param_open_hours_flag" : "open_hours_flag"
+    "param_open_hours_flag": "open_hours_flag"
+  },
+  "editTimezoneForBusinessHrAndCallRoutingApi": {
+    "url": "http://68.183.198.108/api/mainline/timezone_edit",
+    "param_access_token": "access_token",
+    "time_zone": "time_zone"
+  },
+  "updateBusinessHoursApi": {
+    "url": "http://68.183.198.108/api/mainline/business_hours_update",
+    "param_access_token": "access_token",
+    "bus_id": "bus_id",
+    "same_all_weekdays": "same_all_weekdays",
+    "same_all_weeks": "same_all_weeks",
+    "hours": "hours"
+  },
+  "setRulesForOpenAndCloseHoursApi": {
+    "url": "http://68.183.198.108/api/mainline/bus_open_close_hour_rules",
+    "param_access_token": "access_token",
+    "rule_hour_type": "rule_hour_type",
+    "send_call_type": "send_call_type"
+  },
+  "businessHoursOperationOptionsApi": {
+    "url": "http://68.183.198.108/api/mainline/bus_operator_routing_type",
+    "param_access_token": "access_token",
+    "rule_hour_type": "rule_hour_type",
+    "operator_type_id": "operator_type_id"
+  },
+  "viewPopupDataForFixedAndRoundRobinApi": {
+    "url": "http://private-6967ee-getwithheaders.apiary-mock.com/questions",
+    "param_access_token": "access_token",
+    "rule_hour_type": "rule_hour_type",
+    "open_order_type": "open_order_type"
+  },
+  "editBusinessHoursOtherRoutingOptionApi": {
+    "url": "http://68.183.198.108/api/mainline/bus_other_routing_options",
+    "param_access_token": "access_token",
+    "rule_hour_type": "rule_hour_type",
+    "routing_options_id": "routing_options_id"
+  },
+  "changeAutomaticGreetingSoundFileApi": {
+    "url": "http://68.183.198.108/api/mainline/change_to_message_sound",
+    "param_access_token": "access_token",
+    "bus_sound_id": "bus_sound_id",
+    "sound_type": "sound_type",
+    "rule_hour_type": "rule_hour_type"
+  },
+  "mainLineEditSoundFileNameApi": {
+    "url": "http://68.183.198.108/api/mainline/routing_options_sound_file_name_edit",
+    "param_access_token": "access_token",
+    "bus_sound_id": "bus_sound_id",
+    "sound_name": "sound_name"
   },
   "constants": {
     "some_constants": "someconstants"

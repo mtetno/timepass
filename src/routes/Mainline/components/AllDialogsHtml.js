@@ -53,6 +53,83 @@ const editMainLinePhoneNumber = (phonenumber,label,onMainLineLabelTextChange,onS
   </div>
    );}
 
+const viewPopupDataForFixedAndRoundRobin = (viewPopupDataForFixedAndRoundRobinData,showViewPopupForFixedAndRorundRobin) => {
+  return (<div id="dialog">
+
+{
+  viewPopupDataForFixedAndRoundRobinData ?
+  <table className="h100">
+  <tbody><tr>
+        <td id="dialog-holder" className="center  ">
+      <div id="dialog-wrapper" className="iblock left">
+        <div className="web-icon-xs web-icon-xs-x dialog-close signup2017" ></div>
+        <div id="dialog-main" className="iblock left"><div id="agxzfnViZXItdm9pY2VyEwsSBk9mZmljZRiAgKjd55KYCww"><div className="call-routing-dialog">
+  <div id="cr-dialog-header" className="call-routing-dialog-header"><div className="dialog-header-with-description"><div id="dialog-header" className="center header-7">
+  <div className="dialog-header-with-description-title">Fixed Ring Order</div>
+
+
+  <div className="dialog-header-with-description-details">Choose the order you'd like Agents rung out. Keep in mind that this order won't change unless you revisit this page.</div>
+
+
+</div>
+
+  <div className="web-icon-xs web-icon-xs-x dialog-close dialog-header-with-description-close"></div>
+
+
+</div></div>
+  <div className="call-routing-dialog-body">
+
+    <table className="call-routing-dialog-body-content">
+      <tbody className="call-routing-dialog-body-content-details">
+
+
+      <tr>
+        <td className="index-col">1</td>
+        <td className="rel data-col cr-dropzone" id="cr-dropzone-index-1">
+          <div className="snappy cr-draggable" id="cr-draggable-id-agxzfnViZXItdm9pY2VyGAsSC1VzZXJQcm9maWxlGICAmN2b-oULDA" draggable="true">
+            <table>
+              <tbody>
+
+
+
+
+              </tbody>
+            </table>
+            <div className="snappy move-bars-handle">
+
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" className="empty-row"></td>
+      </tr>
+
+
+      </tbody>
+    </table>
+
+
+  </div>
+  <div id="cr-dialog-footer" className="dialog-footer">
+    <div id="cr-save-changes-btn" className="primary-button center ">Save Changes</div>
+  </div>
+</div></div></div>
+        <div id="dialog-loading" >
+          <div className="dialog-loading-bg"></div>
+          <div className="dialog-loading-img"></div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</tbody>
+</table>
+  : undefined
+}
+
+</div>);
+}
+
 export {
-   editMainLinePhoneNumber,
+   editMainLinePhoneNumber,viewPopupDataForFixedAndRoundRobin
 }

@@ -16,14 +16,12 @@ const styles = {
 };
 
 class SimpleSlider extends React.Component {
-  state = {
-    value: 0,
-  };
 
-  componentWillReceiveProps(newProps) {
- 
-    this.setState({value: parseInt(newProps.value) });
-  }
+
+  // componentWillReceiveProps(newProps) {
+  //
+  //   this.setState({value: parseInt(newProps.value) });
+  // }
 
 
   componentDidMount(){
@@ -33,8 +31,8 @@ class SimpleSlider extends React.Component {
 
 
   render() {
-    const { classes } = this.props;
-    const { value } = this.state;
+    const { classes,value } = this.props;
+
   const styelVal =  value*5 + "px";
     return (
 

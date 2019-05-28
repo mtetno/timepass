@@ -1,0 +1,1571 @@
+{
+	"info": {
+		"_postman_id": "7fee5e15-f0a6-41a8-965b-eddc6dd22284",
+		"name": "efone Mainline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " 1. Main Line Info ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline"
+					]
+				},
+				"description": " Main Line Info \n \n \n Params           required/optional\n \n \n access_token     required"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Mainline Assign Operators &Phones (Operators List)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/assign_operators_list",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"assign_operators_list"
+					]
+				},
+				"description": "Mainline Assign Operators &Phones (Operators List)\n\nParams           required / optional\n\naccess_token     required\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "3. Mainline Assigned Operators & Phones (add operator)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "team_member_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/assign_operators",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"assign_operators"
+					]
+				},
+				"description": "Mainline Assigned Operators & Phones\n\nParams           required/optional\n\naccess_token     required\n\nteam_member_id   required"
+			},
+			"response": []
+		},
+		{
+			"name": "4. Main Line Info (Name Edit)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Skylinx",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_name_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_name_edit"
+					]
+				},
+				"description": " Main Line Info (Name Edit)\n \n Params            required /optional\n \n access_token      required\n \n name              required"
+			},
+			"response": []
+		},
+		{
+			"name": "5 . Main Line Info (Abbreviation edit)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "abbrivation",
+							"value": "Abbr",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_abbrivation_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_abbrivation_edit"
+					]
+				},
+				"description": "Main Line Info (Abbreviation edit)\n\nParams               required/optional\n\naccess_token         required\n\nabbrivation          required"
+			},
+			"response": []
+		},
+		{
+			"name": "6 . Mainline  Info Options Edit (Voicemails & Faxes Notifications & Status)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "calls_status",
+							"value": "1",
+							"description": "options(1,2) : optional",
+							"type": "text"
+						},
+						{
+							"key": "notifications_for_voicemail",
+							"value": "1",
+							"description": "options(1,2) : optional",
+							"type": "text"
+						},
+						{
+							"key": "notifications_for_fax",
+							"value": "2",
+							"description": "options(1,2) : optional",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_options_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_options_edit"
+					]
+				},
+				"description": "Mainline  Info Options Edit (Voicemails & Faxes Notification & Status)\n\nNote : IF change status & Notofications Changes this api will works \nbased on params\n\nParams      \t\t\t\t\trequired/optional\n\naccess_token                    required\n\t\nnotifications_for_voicemail     required\n\nnotifications_for_fax           required\n\ncalls_status                    required"
+			},
+			"response": []
+		},
+		{
+			"name": "7. Main Line Info  Phone numbers Edit (Edit Label)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "mainline_number_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "efone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_number_label_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_number_label_edit"
+					]
+				},
+				"description": " Main Line Info  Phone numbers Edit\n \n Params             required/optional\n \n access_token       required\n \n mainline_number_id required\n \n label              required"
+			},
+			"response": []
+		},
+		{
+			"name": "8.  Main Line Info  Phone numbers Edit  Show By Phonenumber (Show data)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "mainline_number_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_number_label_edit_data",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_number_label_edit_data"
+					]
+				},
+				"description": " Main Line Info  Phone numbers Edit  Show By Phonenumber (Show data)\n \n Params             required /optional\n \n access_token       required\n \n mainline_number_id required"
+			},
+			"response": []
+		},
+		{
+			"name": "9. Remove Assigned Operators & Phones (Remove Operators)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "account_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/remove_assign_operators",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"remove_assign_operators"
+					]
+				},
+				"description": "Remove Assigned Operators & Phones (Remove Operators)\n\n\nParams              required / optional\n\naccess_token        required\n\naccount_id          required"
+			},
+			"response": []
+		},
+		{
+			"name": "10. Business Hours & Call Routing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/business_hours",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"business_hours"
+					]
+				},
+				"description": "Business Hours & Call Routing\n\nParams           required/optional\n\naccess_token     required\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "11.Business Hours & Call Routing Edit Details(TimeZone)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/bus_hours_timezone_list",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"bus_hours_timezone_list"
+					]
+				},
+				"description": "Business Hours & Call Routing Edit Details(Slide)\n\nParams          required /optional\n\naccess_token    required"
+			},
+			"response": []
+		},
+		{
+			"name": "12. Edit Business Hours & Call Routing Edit Details ( Set your business hours for this office)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/bus_hours_edit_data",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"bus_hours_edit_data"
+					]
+				},
+				"description": "Edit Business Hours & Call Routing Edit Details \n\nParams         required  /optional\n\naccess_token   required"
+			},
+			"response": []
+		},
+		{
+			"name": "13. Edit Business Hours Type for 24 / 7 Or Sepecific Hours",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "open_hours_flag",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/business_hours_open_hr_flag_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"business_hours_open_hr_flag_edit"
+					]
+				},
+				"description": "Edit Business Hours Type for 24/7 Or Sepecific Hours\n\nparams            required / optional\n\naccess_token      required\n\nopen_hours_flag   required"
+			},
+			"response": []
+		},
+		{
+			"name": "14. Edit Timezone for Business Hours & Call Routing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "time_zone",
+							"value": "Asia/kolkata",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/timezone_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"timezone_edit"
+					]
+				},
+				"description": "Edit Timezone for Business Hours & Call Routing\n\nParams            required / optional\n\naccess_token      required\n\ntime_zone         required"
+			},
+			"response": []
+		},
+		{
+			"name": "15. Business Hours update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "bus_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "same_all_weekdays",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "same_all_weeks",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "hours[0]",
+							"value": " 08:15 am",
+							"type": "text"
+						},
+						{
+							"key": "hours[1]",
+							"value": " 12:15 pm",
+							"type": "text"
+						},
+						{
+							"key": "hours[2]",
+							"value": " 06:15 am",
+							"type": "text"
+						},
+						{
+							"key": "hours[3]",
+							"value": " 09:15 pm",
+							"type": "text"
+						},
+						{
+							"key": "hours[4]",
+							"value": " 06:00 am",
+							"type": "text"
+						},
+						{
+							"key": "hours[5]",
+							"value": " 04:15 pm",
+							"type": "text"
+						},
+						{
+							"key": "hours[6]",
+							"value": " 08:15 am",
+							"type": "text"
+						},
+						{
+							"key": "hours[7]",
+							"value": " 07:15 pm",
+							"type": "text"
+						},
+						{
+							"key": "hours[8]",
+							"value": " 05:30 am",
+							"type": "text"
+						},
+						{
+							"key": "hours[9]",
+							"value": " 08:00 pm",
+							"type": "text"
+						},
+						{
+							"key": "hours[10]",
+							"value": " 07:15 am",
+							"type": "text"
+						},
+						{
+							"key": "hours[11]",
+							"value": " 03:15 pm",
+							"type": "text"
+						},
+						{
+							"key": "hours[12]",
+							"value": " 05:15 am",
+							"type": "text"
+						},
+						{
+							"key": "hours[13]",
+							"value": " 04:15 pm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/business_hours_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"business_hours_update"
+					]
+				},
+				"description": "required fields :\n\naccess_token\n\nbus_id\n\nsame_all_weekdays\n\nsame_all_weeks\n\nhours[0] to hours[13](array formate)\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "16. Set Rules For Open &  Closed Hours",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"description": "OPEN_HOURS,CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "send_call_type",
+							"value": "1",
+							"description": "Ooperators,Other Routing types",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/bus_open_close_hour_rules",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"bus_open_close_hour_rules"
+					]
+				},
+				"description": "required fields\n\naccess_token\n\nrule_hour_type\n\nsend_call_type"
+			},
+			"response": []
+		},
+		{
+			"name": "17. Business Hours Operators Options",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"description": "OPEN_HOURS,CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "operator_type_id",
+							"value": "2",
+							"description": "1,2,3,4(options like LongestIdle,Round Robin,Fixed Order,Simultaneously)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/bus_operator_routing_type",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"bus_operator_routing_type"
+					]
+				},
+				"description": "Required fields :\n\naccess_token\n\nrule_hour_type\n\noperator_type_id\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "18. View Popup Data For FIxed Order & Round Robin ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"description": "OPEN_HOURS,CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "open_order_type",
+							"value": "ROUND_ROBIN",
+							"description": "FIXED_ORDER,ROUND_ROBIN",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/bus_fixed_order_team_member",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"bus_fixed_order_team_member"
+					]
+				},
+				"description": "Required Fields :\n\naccess token\n\nrule_hour_type : OPEN_HOURS OR CLOSED HOURS\n\nopen_orde_type : FIXED_ORDER OR ROUND_ROBIN"
+			},
+			"response": []
+		},
+		{
+			"name": "19. Business Hours Other Routing Oprtions Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"description": "OPEN_HOURS,CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "routing_options_id",
+							"value": "1",
+							"description": "It will updated only for first option",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/bus_other_routing_oprtions",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"bus_other_routing_oprtions"
+					]
+				},
+				"description": "Required Fileds:\n\naccess_token\n\nrule_hour_type\n\nrouting_options_id"
+			},
+			"response": []
+		},
+		{
+			"name": "20.Change Automated Greeting Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "bus_sound_id",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "sound_type",
+							"value": "AUTOMATED_GREETING",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/change_to_message_sound",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"change_to_message_sound"
+					]
+				},
+				"description": "Reqiured Fields :\n\naccess_token\n\nbus_sound_id\n\nsound_type\n\nrule_hour_type"
+			},
+			"response": []
+		},
+		{
+			"name": "21 .Edit Sound File Name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "bus_sound_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sound_name",
+							"value": "abc123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/routing_options_sound_file_name_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"routing_options_sound_file_name_edit"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nbus_sound_id\n\nsound_name"
+			},
+			"response": []
+		},
+		{
+			"name": "22. Delete Sound File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "bus_sound_id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/routing_options_sound_file_delete",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"routing_options_sound_file_delete"
+					]
+				},
+				"description": "Required Fields\n\naccess token\n\nbus_sound_id"
+			},
+			"response": []
+		},
+		{
+			"name": "23. Business Hours Sound File Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "sound_file",
+							"type": "file"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "CLOSED_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "sound_type",
+							"value": "CLOSED_FALLBACK_CALLER_GREETING",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/automated_sound_upload",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"automated_sound_upload"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nsound_file\n\nsound_type\n\nrule_hour_type\n\n\nNOTE: When Your Upload some sound files like\n\t\t\n\t\tVOICEMAIL / \tDEFAULT_VOICEMAIL\n\t\tOPEN_GREETING/ DEFAULT_OPEN_GREETING\n\t\tCLOSE_GREETING / DEFAULT_CLOSE_GREETING\n\t\tHOLD_MUSIC / DEFAULT_HOLD_MUSIC\n\t\tHOLD_GREETING / DEFAULT_HOLD_GREETING\n\t\tMAINLINE_HOLD_MUSIC / DEFAULT_MAINLINE_HOLD_MUSIC\n\t\tMAINLINE_ADV_SETTINGS /  \tDEFAULT_MAINLINE_ADV_SETTINGS\n\t\n\twhere  you should send \n\t\n\t\trule_hour_type = 'VOICEMAIL', it is required."
+			},
+			"response": []
+		},
+		{
+			"name": "24. Change Automated Departments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "dept_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1 means fallback option ,2 means other routings(automated response menu)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/automated_department_change",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"automated_department_change"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\ndept_id\n\nrule_hour_type\n\ntype"
+			},
+			"response": []
+		},
+		{
+			"name": "25. Change Automated Team Members",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "team_member_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/automated_response_open_caller_greeting",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"automated_response_open_caller_greeting"
+					]
+				},
+				"description": "Reqired Fields\n\naccess_token\n\nteam_member_id\n\nrule_hour_type\n\ntype\n\n\n1 is for fallback options team member update\n\n2 is for automated response menu team member update"
+			},
+			"response": []
+		},
+		{
+			"name": "26. Edit Ring Duration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "ring_duration",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/ring_duration_edit",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"ring_duration_edit"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nring_duration"
+			},
+			"response": []
+		},
+		{
+			"name": "27. Automated response Menu Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "rule_hour_type",
+							"value": "OPEN_HOURS",
+							"type": "text"
+						},
+						{
+							"key": "option_id",
+							"value": "opt_id1",
+							"type": "text"
+						},
+						{
+							"key": "option_label",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "option_val",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1 => fallback option update , 2 => automated response mune update",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/automated_response_menu_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"automated_response_menu_update"
+					]
+				},
+				"description": "Required Fields          Optional Fields\n\naccess_token             option_val\n\noption_id\n\noption_label\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "28. Hold Queue Options Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "676263ef937759107eda3888700e349d",
+							"type": "text"
+						},
+						{
+							"key": "hold_queue_status",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "hold_queue_size",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "queue_wait_time_mins",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "queue_wait_time_seconds",
+							"value": "16",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/hold_queue_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"hold_queue_update"
+					]
+				},
+				"description": "Required  Fields\t\t Optional Fields\n\naccess_token\t\t\thold_queue_status\n\n\t\t\t\t\t\thold_queue_size\n\t\t\t\t\t\t\n\t\t\t\t\t\tqueue_wait_time_mins\n\t\t\t\t\t\t\n\t\t\t\t\t\tqueue_wait_time_seconds\n\t\t\t\t\t\t\n\tNote: when you hit this api ,you sholud send any one of the abpve optional parameter\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "29. FallBack Options Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "fallback_option_id",
+							"value": "1",
+							"description": "Here fallback options 1 only updated,you should send value 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/fallback_options_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"fallback_options_update"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nfallback_option_id\n\ntype\n\n\n\n\ntype  1 is fallback options\n\n\t   2 is automated response options"
+			},
+			"response": []
+		},
+		{
+			"name": "30. Holiday Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "holiday_name",
+							"value": "holiday22",
+							"type": "text"
+						},
+						{
+							"key": "holiday_repeat",
+							"value": "annual",
+							"type": "text"
+						},
+						{
+							"key": "holiday_date",
+							"value": "2019-05-21",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/add_holiday",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"add_holiday"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nholiday_name\n\nholiday_repeat\n\nholiday_date"
+			},
+			"response": []
+		},
+		{
+			"name": "31. Change Holiday",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "holiday_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/change_holiday",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"change_holiday"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nholiday_id"
+			},
+			"response": []
+		},
+		{
+			"name": "32. Holiday Hours (Dropdown)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/holiday_hours",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"holiday_hours"
+					]
+				},
+				"description": "Required Fields\n \naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "33. Mainline Hold Music (Drop Down)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_hold_music_list",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_hold_music_list"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "34. Mainline Advanced Settings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_adv_settings",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_adv_settings"
+					]
+				},
+				"description": "Required Fields\n\naccess_token"
+			},
+			"response": []
+		},
+		{
+			"name": "35. Edit Mainline Advanced Settings Options",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "record_all_calls_to_dept",
+							"value": "2",
+							"description": "status    1=.enable 2=>disable",
+							"type": "text"
+						},
+						{
+							"key": "calls_waiting_operators",
+							"value": "1",
+							"description": "status    1=.enable 2=>disable",
+							"type": "text"
+						},
+						{
+							"key": "mainline_adv_settings_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/mainline_adv_settings_update",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"mainline_adv_settings_update"
+					]
+				},
+				"description": "Required Fields      Optional fields\n\naccess_token          calla_waiting_operators\n \n\t\t\t\t\t record_all_calls_to_dept"
+			},
+			"response": []
+		},
+		{
+			"name": "36. Validate Mainline Advanced Settings Department Number ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "3eae9cae2d299c6f11f0506e45695a2d",
+							"type": "text"
+						},
+						{
+							"key": "mainline_adv_settings_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "validate_number",
+							"value": "888888",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "68.183.198.108/api/mainline/validate_mainline_adv_settings_number",
+					"host": [
+						"68",
+						"183",
+						"198",
+						"108"
+					],
+					"path": [
+						"api",
+						"mainline",
+						"validate_mainline_adv_settings_number"
+					]
+				},
+				"description": "Required Fields\n\naccess_token\n\nmainline_adv_settings_id\n\nvalidate_number"
+			},
+			"response": []
+		}
+	]
+}

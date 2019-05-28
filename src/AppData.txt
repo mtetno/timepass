@@ -52,3 +52,17 @@ user end
 
 email:  kaushik@myeasytel.com
 password : EasyT3l1
+"open_greeting_sounds": [
+                {
+                    "bus_sound_id": "22",
+                    "sound_name": "testhello",
+                    "sound_path": "var/www/",
+                    "select_flag": "1"
+                },
+                {
+                    "bus_sound_id": "5",
+                    "sound_name": "abc123",
+                    "sound_path": "var/www/",
+                    "select_flag": "2"
+                }
+            ],
