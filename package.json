@@ -43,7 +43,7 @@
     "prop-types": "^15.5.10",
     "react": "latest",
     "react-bootstrap": "latest",
-    "react-compound-slider": "^0.3.0",
+    "react-compound-slider": "^3.4.0",
     "react-dom": "latest",
     "react-facebook-login": "^4.1.1",
     "react-fontawesome": "^1.6.1",
